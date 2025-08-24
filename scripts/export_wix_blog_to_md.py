@@ -58,6 +58,13 @@ def http_get(url: str, timeout: float = 30.0) -> bytes:
         return resp.read()
 
 
+def http_get_text(url: str, timeout: float = 30.0) -> Optional[str]:
+    try:
+        return http_get(url, timeout=timeout).decode("utf-8", errors="ignore")
+    except Exception:
+        return None
+
+
 def parse_rss_full(base_url: str) -> Dict[str, Dict[str, Any]]:
     url = f"{base_url}/blog-feed.xml"
     try:
@@ -272,21 +279,49 @@ def download_inline_images(html_body: str, folder: pathlib.Path) -> Tuple[str, i
 
 
 def rewrite_markdown_images(md: str, folder: pathlib.Path) -> Tuple[str, int]:
-    """Download all remote images referenced by Markdown ![alt](url) and rewrite to local paths.
+    """Download all remote images referenced by Markdown (both image syntax and plain links) and rewrite to local paths.
+
+    - Handles: ![alt](url) and [alt](url) when url looks like an image
+    - Deduplicates repeated URLs within the same document
 
     Returns: (new_markdown, downloaded_count)
     """
     ensure_dir(folder)
     count = 0
+    url_map: Dict[str, str] = {}
 
-    def repl(m: re.Match) -> str:
+    def is_image_url(u: str) -> bool:
+        if not u:
+            return False
+        pu = urllib.parse.urlparse(u)
+        path = pu.path.lower()
+        _, ext = os.path.splitext(path)
+        if ext in {".jpg", ".jpeg", ".png", ".gif", ".webp", ".svg"}:
+            return True
+        # Heuristic: wix static media paths
+        if "static.wixstatic.com" in (pu.netloc or "") and "/media/" in path:
+            return True
+        return False
+
+    def canonical_image_key(u: str) -> str:
+        try:
+            first = largest_image_candidates(u)[0]
+            pu = urllib.parse.urlparse(first)
+            return urllib.parse.urlunparse((pu.scheme, pu.netloc, pu.path, "", "", ""))
+        except Exception:
+            return u
+
+    def download_and_local(u: str) -> Optional[str]:
         nonlocal count
-        alt = m.group(1) or ""
-        url = m.group(2) or ""
-        title = (m.group(3) or "").strip()
-        if not url or (not url.startswith("http://") and not url.startswith("https://")):
-            return m.group(0)
-        base = os.path.basename(urllib.parse.urlparse(url).path) or f"image-{count}.jpg"
+        key = canonical_image_key(u)
+        if key in url_map:
+            return url_map[key]
+        if not (u.startswith("http://") or u.startswith("https://")):
+            return None
+        if not is_image_url(u):
+            return None
+        # Use canonical key to derive filename, so variants map consistently
+        base = os.path.basename(urllib.parse.urlparse(key).path) or f"image-{count}.jpg"
         dest = folder / base
         i = 1
         while dest.exists():
@@ -294,25 +329,223 @@ def rewrite_markdown_images(md: str, folder: pathlib.Path) -> Tuple[str, int]:
             dest = folder / f"{name}-{i}{ext}"
             i += 1
         ok = False
-        for cand in largest_image_candidates(url):
+        for cand in largest_image_candidates(u):
             if download_file(cand, dest):
                 ok = True
                 break
-        if ok:
-            count += 1
-            local = f"./{folder.name}/{dest.name}"
-            if title:
-                return f"![{alt}]({local} \"{title}\")"
-            else:
-                return f"![{alt}]({local})"
-        return m.group(0)
-    # Pass 1: raw title quotes
-    pattern1 = re.compile(r"!\[([^\]]*)\]\(([^)\s]+)(?:\s+\"([^\"]*)\")?\)")
-    md = pattern1.sub(repl, md)
-    # Pass 2: HTML-escaped title quotes &quot;
-    pattern2 = re.compile(r"!\[([^\]]*)\]\(([^)\s]+)(?:\s+&quot;([^&]*)&quot;)?\)")
-    md = pattern2.sub(repl, md)
+        if not ok:
+            return None
+        count += 1
+        local = f"./{folder.name}/{dest.name}"
+        url_map[key] = local
+        return local
+
+    def repl_img(m: re.Match) -> str:
+        alt = m.group(1) or ""
+        url = m.group(2) or ""
+        title = (m.group(3) or "").strip()
+        local = download_and_local(url)
+        if not local:
+            return m.group(0)
+        return f"![{alt}]({local} \"{title}\")" if title else f"![{alt}]({local})"
+
+    def repl_link(m: re.Match) -> str:
+        alt = m.group(1) or ""
+        url = m.group(2) or ""
+        title = (m.group(3) or "").strip()
+        local = download_and_local(url)
+        if not local:
+            return m.group(0)
+        # Convert link-to-image into markdown image
+        return f"![{alt}]({local} \"{title}\")" if title else f"![{alt}]({local})"
+
+    # Pass 1: Markdown image syntax with raw quotes
+    pattern_img1 = re.compile(r"!\[([^\]]*)\]\(([^)\s]+)(?:\s+\"([^\"]*)\")?\)")
+    md = pattern_img1.sub(repl_img, md)
+    # Pass 2: Markdown image syntax with &quot; title
+    pattern_img2 = re.compile(r"!\[([^\]]*)\]\(([^)\s]+)(?:\s+&quot;([^&]*)&quot;)?\)")
+    md = pattern_img2.sub(repl_img, md)
+    # Pass 3: Plain links that look like images (raw quotes)
+    pattern_link1 = re.compile(r"\[([^\]]*)\]\(([^)\s]+)(?:\s+\"([^\"]*)\")?\)")
+    md = pattern_link1.sub(repl_link, md)
+    # Pass 4: Plain links with &quot; titles
+    pattern_link2 = re.compile(r"\[([^\]]*)\]\(([^)\s]+)(?:\s+&quot;([^&]*)&quot;)?\)")
+    md = pattern_link2.sub(repl_link, md)
     return md, count
+
+
+def rewrite_markdown_documents(md: str, folder: pathlib.Path) -> Tuple[str, int]:
+    """Download remote document links (PDF and Microsoft Office formats) and rewrite to local paths.
+
+    Handles Markdown links [text](url) where url ends with one of: .pdf, .doc, .docx, .xls, .xlsx, .ppt, .pptx
+    Returns: (new_markdown, downloaded_count)
+    """
+    ensure_dir(folder)
+    count = 0
+    url_map: Dict[str, str] = {}
+
+    exts = {".pdf", ".doc", ".docx", ".xls", ".xlsx", ".ppt", ".pptx"}
+
+    def is_doc_url(u: str) -> bool:
+        if not u or not (u.startswith("http://") or u.startswith("https://")):
+            return False
+        pu = urllib.parse.urlparse(u)
+        _, ext = os.path.splitext(pu.path.lower())
+        return ext in exts
+
+    def download_and_local(u: str) -> Optional[str]:
+        nonlocal count
+        if u in url_map:
+            return url_map[u]
+        if not is_doc_url(u):
+            return None
+        pu = urllib.parse.urlparse(u)
+        base = os.path.basename(pu.path) or f"file-{count}.bin"
+        dest = folder / base
+        i = 1
+        while dest.exists():
+            name, ext = os.path.splitext(base)
+            dest = folder / f"{name}-{i}{ext}"
+            i += 1
+        ok = download_file(u, dest)
+        if not ok:
+            return None
+        count += 1
+        local = f"./{folder.name}/{dest.name}"
+        url_map[u] = local
+        return local
+
+    def repl_link(m: re.Match) -> str:
+        text = m.group(1) or ""
+        url = m.group(2) or ""
+        title = (m.group(3) or "").strip()
+        local = download_and_local(url)
+        if not local:
+            return m.group(0)
+        return f"[{text}]({local} \"{title}\")" if title else f"[{text}]({local})"
+
+    pattern1 = re.compile(r"\[([^\]]*)\]\(([^)\s]+)(?:\s+\"([^\"]*)\")?\)")
+    md = pattern1.sub(repl_link, md)
+    pattern2 = re.compile(r"\[([^\]]*)\]\(([^)\s]+)(?:\s+&quot;([^&]*)&quot;)?\)")
+    md = pattern2.sub(repl_link, md)
+    return md, count
+
+
+def _extract_doc_links_from_html(page_html: str, base_url: Optional[str]) -> Dict[str, str]:
+    """Return map of lowercase basename -> absolute URL for doc links found in HTML.
+
+    Matches:
+    - href="...ext" and href='...ext'
+    - Any http(s) URL in the HTML text that ends with a supported extension
+    """
+    out: Dict[str, str] = {}
+    # href with double or single quotes
+    doc_href = re.compile(r"href=([\"'])([^\"']+\.(?:pdf|docx?|xlsx?|pptx?))(?:\?[^\"']*)?\1", re.I)
+    for m in doc_href.finditer(page_html):
+        raw = m.group(2)
+        url = urllib.parse.urljoin(base_url or "", raw)
+        pu = urllib.parse.urlparse(url)
+        base = os.path.basename(pu.path)
+        key = base.lower()
+        if base and key not in out:
+            out[key] = url
+        # Map by dn= original filename if present
+        q = urllib.parse.parse_qs(pu.query)
+        dn = q.get("dn", [None])[0]
+        if dn:
+            dn_base = os.path.basename(dn)
+            dn_key = dn_base.lower()
+            if dn_base and dn_key not in out:
+                out[dn_key] = url
+    # Generic URLs in the text
+    url_text = re.compile(r"https?://[^\s\"'<>]+\.(?:pdf|docx?|xlsx?|pptx?)(?:\?[^\s\"'<>]*)?", re.I)
+    for m in url_text.finditer(page_html):
+        url = m.group(0)
+        pu = urllib.parse.urlparse(url)
+        base = os.path.basename(pu.path)
+        key = base.lower()
+        if base and key not in out:
+            out[key] = url
+        q = urllib.parse.parse_qs(pu.query)
+        dn = q.get("dn", [None])[0]
+        if dn:
+            dn_base = os.path.basename(dn)
+            dn_key = dn_base.lower()
+            if dn_base and dn_key not in out:
+                out[dn_key] = url
+    return out
+
+
+def rewrite_bare_doc_filenames(md: str, page_url: Optional[str], folder: pathlib.Path) -> Tuple[str, int]:
+    """Find bare document filenames in Markdown text, locate their URLs via page HTML, download, and rewrite to [name](./files/name)."""
+    ensure_dir(folder)
+    # Find candidate filenames not obviously part of a Markdown link already
+    filename_re = re.compile(r"\b([A-Za-z0-9][A-Za-z0-9_.-]{1,200}\.(?:pdf|docx?|xlsx?|pptx?))\b")
+
+    # Remove fenced code blocks to avoid accidental replacements inside code
+    code_fence_re = re.compile(r"```[\s\S]*?```", re.M)
+    placeholders: List[str] = []
+    def _stash(m: re.Match) -> str:
+        placeholders.append(m.group(0))
+        return f"@@CODEFENCE{len(placeholders)-1}@@"
+    work = code_fence_re.sub(_stash, md)
+
+    # Build link map from page
+    doc_map: Dict[str, str] = {}
+    if page_url:
+        page_html = http_get_text(page_url)
+        if page_html:
+            doc_map = _extract_doc_links_from_html(page_html, page_url)
+
+    downloaded: Dict[str, str] = {}
+    count = 0
+
+    def repl(m: re.Match) -> str:
+        nonlocal count
+        name = m.group(1)
+        # Skip if already part of a markdown link: [text](...name...) or inline link immediately around
+        start = m.start()
+        end = m.end()
+        left = work[max(0, start-2):start]
+        right = work[end:end+2]
+        if left.endswith("(") or right.startswith(")"):
+            return name
+        key = name.lower()
+        url = doc_map.get(key)
+        if not url:
+            # If there's exactly one doc link found on page, use it as a fallback
+            if len(doc_map) == 1:
+                url = next(iter(doc_map.values()))
+            else:
+                # try extension-based fallback when only one candidate with same ext exists
+                _, ext = os.path.splitext(key)
+                candidates = [v for k, v in doc_map.items() if k.endswith(ext)]
+                if len(candidates) == 1:
+                    url = candidates[0]
+                else:
+                    return name
+        # Download
+        dest = folder / name
+        i = 1
+        while dest.exists():
+            stem, ext = os.path.splitext(name)
+            dest = folder / f"{stem}-{i}{ext}"
+            i += 1
+        if not download_file(url, dest):
+            return name
+        local = f"./{folder.name}/{dest.name}"
+        downloaded[name] = local
+        count += 1
+        return f"[{name}]({local})"
+
+    work = filename_re.sub(repl, work)
+
+    # Restore code blocks
+    def _unstash(m: re.Match) -> str:
+        idx = int(m.group(1))
+        return placeholders[idx]
+    work = re.sub(r"@@CODEFENCE(\d+)@@", _unstash, work)
+    return work, count
 
 
 class MarkdownHTMLParser(HTMLParser):
@@ -495,6 +728,42 @@ class MarkdownHTMLParser(HTMLParser):
         return "\n".join(lines).strip() + "\n"
 
 
+def _strip_markdown_css_js_noise(md: str) -> str:
+    """Remove residual CSS/JS-like blocks that sometimes leak from Wix embeds after conversion.
+
+    Heuristics:
+    - Drop blocks that look like CSS rules (lines with selectors + { ... }) until braces balance.
+    - Drop common JS noise lines (window., document., requestAnimationFrame, try { } catch, console.).
+    """
+    lines = md.splitlines()
+    out: List[str] = []
+    in_css = False
+    brace_depth = 0
+    css_start_re = re.compile(r"\s*(?:@media|@keyframes|[.#][\w-].*\{|[a-zA-Z][\w\-\s,#.:>\[\]=]+\{)")
+    js_noise_re = re.compile(r"\b(window\.|document\.|requestAnimationFrame|getBoundingClientRect|console\.)")
+    for ln in lines:
+        if in_css:
+            brace_depth += ln.count("{") - ln.count("}")
+            if brace_depth <= 0:
+                in_css = False
+            continue
+        # Detect CSS block start on this line
+        if css_start_re.match(ln):
+            in_css = True
+            brace_depth = ln.count("{") - ln.count("}")
+            # If CSS opens and closes on same line, exit immediately
+            if brace_depth <= 0:
+                in_css = False
+            continue
+        # Skip common JS noise lines
+        if js_noise_re.search(ln) or re.match(r"\s*try\s*\{\s*$", ln) or re.match(r"\s*}\s*catch\b", ln):
+            continue
+        out.append(ln)
+    txt = "\n".join(out)
+    txt = re.sub(r"\n{3,}", "\n\n", txt)
+    return txt.strip() + "\n"
+
+
 def html_to_markdown(html_text: str) -> str:
     # Remove scripts, styles, and noscript blocks before conversion
     cleaned = re.sub(r"<script[\s\S]*?</script>", " ", html_text, flags=re.I)
@@ -502,7 +771,9 @@ def html_to_markdown(html_text: str) -> str:
     cleaned = re.sub(r"<noscript[\s\S]*?</noscript>", " ", cleaned, flags=re.I)
     parser = MarkdownHTMLParser()
     parser.feed(cleaned)
-    return parser.getvalue()
+    md = parser.getvalue()
+    # Post-process to strip any lingering CSS/JS-like noise
+    return _strip_markdown_css_js_noise(md)
 
 
 def html_to_plain(html_text: str) -> str:
@@ -605,6 +876,10 @@ def write_markdown(
         body_out = html_to_markdown(body_html) if body_html else ""
         if body_out and download_inline:
             body_out, _ = rewrite_markdown_images(body_out, folder / "images")
+            # Also download and rewrite document links
+            body_out, _ = rewrite_markdown_documents(body_out, folder / "files")
+            # Also detect bare filenames like PW2023Public.xlsx and link them
+            body_out, _ = rewrite_bare_doc_filenames(body_out, post.get("url"), folder / "files")
     else:  # plain
         body_out = html_to_plain(body_html) if body_html else ""
 
@@ -628,6 +903,10 @@ def write_markdown(
                         body_out, _ = download_inline_images(body_out, folder / "images")
                 elif body_format == "markdown":
                     body_out = html_to_markdown(extracted)
+                    if download_inline and body_out:
+                        body_out, _ = rewrite_markdown_images(body_out, folder / "images")
+                        body_out, _ = rewrite_markdown_documents(body_out, folder / "files")
+                        body_out, _ = rewrite_bare_doc_filenames(body_out, post.get("url"), folder / "files")
                 else:
                     body_out = html_to_plain(extracted)
         except Exception:
