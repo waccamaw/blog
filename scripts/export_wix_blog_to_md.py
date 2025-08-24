@@ -252,18 +252,17 @@ class MarkdownHTMLParser(HTMLParser):
         self.in_code = False
         self.in_pre = False
         self.in_link: List[str] = []  # href stack
-        self.block_pending_newlines = 0
+        self.in_blockquote = False
 
     def _ensure_block_sep(self, lines: int = 2) -> None:
-        if self.out and not self.out[-1].endswith("\n"):
-            self.out.append("\n")
-        # ensure at least lines newlines at block boundaries
-        if self.out:
-            while lines > 0 and (len(self.out) < 2 or self.out[-1] != "\n" or self.out[-2] != "\n"):
-                self.out.append("\n")
-                lines -= 1
-        else:
-            self.out.append("\n" * lines)
+        # Ensure a blank line separation between blocks
+        text = "".join(self.out)
+        if not text:
+            return
+        # Normalize end to at most one blank line, then add required
+        text = re.sub(r"\n+$", "\n", text)
+        self.out[:] = [text]
+        self.out.append("\n" * lines)
 
     def handle_starttag(self, tag: str, attrs_list: List[Tuple[str, Optional[str]]]):
         attrs = dict(attrs_list)
@@ -326,7 +325,7 @@ class MarkdownHTMLParser(HTMLParser):
             self.out.append("###### ")
         elif tag == "blockquote":
             self._ensure_block_sep(1)
-            self.out.append("> ")
+            self.in_blockquote = True
         elif tag == "img":
             alt = attrs.get("alt", "") or ""
             src = attrs.get("src", "") or ""
@@ -369,13 +368,26 @@ class MarkdownHTMLParser(HTMLParser):
             self.out.append("]")
             if href:
                 self.out.append(f"({href})")
-        elif tag in {"p", "div", "section", "article", "h1", "h2", "h3", "h4", "h5", "h6", "blockquote"}:
+        elif tag in {"p", "div", "section", "article", "h1", "h2", "h3", "h4", "h5", "h6"}:
+            self.out.append("\n\n")
+        elif tag == "blockquote":
+            # End blockquote
+            self.in_blockquote = False
             self.out.append("\n\n")
 
     def handle_data(self, data: str):
         if not data:
             return
-        self.out.append(data)
+        if self.in_blockquote:
+            # Prefix each non-empty line with "> "
+            lines = data.splitlines()
+            for i, ln in enumerate(lines):
+                pref = "> " if ln.strip() else ""
+                self.out.append(pref + ln)
+                if i < len(lines) - 1:
+                    self.out.append("\n")
+        else:
+            self.out.append(data)
 
     def getvalue(self) -> str:
         text = "".join(self.out)
@@ -442,12 +454,16 @@ def write_markdown(
     # Prepare front matter
     date_iso = date_dt.isoformat().replace("+00:00", "Z")
     lastmod_iso = (lastmod_dt.isoformat().replace("+00:00", "Z") if lastmod_dt else "")
+    # Deduplicate/sort categories
+    cats = list(dict.fromkeys(post.get("categories", []) or []))
+    cats.sort()
+
     fm: Dict[str, Any] = {
         "title": post.get("title") or "",
         "date": date_iso,
         "lastmod": lastmod_iso,
         "url": post.get("url", ""),
-        "categories": post.get("categories", []) or [],
+        "categories": cats,
         "author": post.get("author", ""),
         "source": "wix",
         "source_guid": post.get("guid", ""),
