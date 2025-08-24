@@ -251,8 +251,8 @@ class MarkdownHTMLParser(HTMLParser):
         self.in_em = False
         self.in_code = False
         self.in_pre = False
-        self.in_link: List[str] = []  # href stack
-        self.in_blockquote = False
+    self.in_link: List[str] = []  # href stack
+    self.in_blockquote = False
 
     def _ensure_block_sep(self, lines: int = 2) -> None:
         # Ensure a blank line separation between blocks
