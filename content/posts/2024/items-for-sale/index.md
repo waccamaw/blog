@@ -29,7 +29,7 @@ Plastic Logoed Cups: $3 each or 2/$5
 
 23rd Annual Pauwau Program Books: $5 each
 
-Contact Filekeeper Starla at [[email protected]](/cdn-cgi/l/email-protection#ca99beabb8a6abaeafaffcfb8aada7aba3a6e4a9a5a7) for availability. There will be a shipping and handling fee added to your total.
+Contact Filekeeper Starla at [[email protected]](/cdn-cgi/l/email-protection#f5a68194879994919090c3c4b59298949c99db969a98) for availability. There will be a shipping and handling fee added to your total.
 
 ![ree](./images/98a108_8ec17869ab0041e9995c082cf55d427f~mv2-1.jpeg)
 
