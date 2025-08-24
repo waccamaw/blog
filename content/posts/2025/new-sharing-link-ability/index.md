@@ -21,7 +21,7 @@ Michelle Hatcher
 
 With Linkpod, connecting with us online is a breeze! You'll find links to all our websites and social media. Plus, sharing is simple: tap the "Share" icon in the top right for a handy QR code your friends can use.
 
-![ree](https://static.wixstatic.com/media/98a108_c27ecf8b836e4ac9983ca9d1e80b010b~mv2.jpg/v1/fill/w_147,h_147,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/98a108_c27ecf8b836e4ac9983ca9d1e80b010b~mv2.jpg)
+![ree](./images/98a108_c27ecf8b836e4ac9983ca9d1e80b010b~mv2-1.jpg)
 
 Tags:
 

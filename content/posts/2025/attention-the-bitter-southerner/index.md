@@ -17,7 +17,7 @@ Michelle Hatcher
 - Apr 9, 2024
 - 1 min read
 
-![ree](https://static.wixstatic.com/media/98a108_92627e666e964a9c9c318d120a32c11c~mv2.jpg/v1/fill/w_132,h_132,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/98a108_92627e666e964a9c9c318d120a32c11c~mv2.jpg)
+![ree](./images/98a108_92627e666e964a9c9c318d120a32c11c~mv2-1.jpg)
 
 I'm a journalist writing a story about the South's clam culture for the [Bitter Southerner](https://bittersoutherner.com/). I'm road tripping from the Chesapeake down the east coast and stopping in communities along the way. I would love to include perspectives from the Waccamaw people and meet someone from your tribe, if possible, on April 19 (as I drive between Wilmington and Charleston). In particular, I'd like to understand how your ancestors interacted with clams, if and where folks are still harvesting wild clams, and if there are any traditional clam dishes from your community.
 
@@ -25,7 +25,7 @@ Caroline Hatchett
 
 writer and editor
 
-[[email protected]](/cdn-cgi/l/email-protection#a0c3c1d2cfccc9cec58ec8c1d4c3c8c5d4d4e0c7cdc1c9cc8ec3cfcd) | 706.296.6291 | [@hatchetteats](https://www.instagram.com/hatchetteats/) | [carolinehatchett.com](http://carolinehatchett.com)
+[[email protected]](/cdn-cgi/l/email-protection#305351425f5c595e551e585144535855444470575d51595c1e535f5d) | 706.296.6291 | [@hatchetteats](https://www.instagram.com/hatchetteats/) | [carolinehatchett.com](http://carolinehatchett.com)
 
 Facebook: [https://www.facebook.com/bittersoutherner](https://www.facebook.com/bittersoutherner)
 

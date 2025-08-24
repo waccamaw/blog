@@ -19,7 +19,7 @@ Michelle Hatcher
 
 Come join us on 9/21/2024!
 
-![ree](https://static.wixstatic.com/media/98a108_512587e78b8e4c549fa64f6b5fc112a5~mv2.jpg/v1/fill/w_147,h_190,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/98a108_512587e78b8e4c549fa64f6b5fc112a5~mv2.jpg)
+![ree](./images/98a108_512587e78b8e4c549fa64f6b5fc112a5~mv2-1.jpg)
 
 Tags:
 

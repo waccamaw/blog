@@ -17,7 +17,7 @@ Doug Hatcher
 - Dec 31, 2019
 - 1 min read
 
-![image](https://static.wixstatic.com/media/98a108_bd0084c845044416aafb15ae0b7d3575~mv2.jpg/v1/fill/w_122,h_173,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/98a108_bd0084c845044416aafb15ae0b7d3575~mv2.jpg)
+![image](./images/98a108_bd0084c845044416aafb15ae0b7d3575~mv2-1.jpg)
 
 [#Native](https://www.waccamaw.org/updates/hashtags/Native) [#IWA](https://www.waccamaw.org/updates/hashtags/IWA)
 

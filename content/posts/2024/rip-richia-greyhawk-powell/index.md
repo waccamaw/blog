@@ -51,29 +51,29 @@ There will be a church service at the Myrtle Beach Christian Church , however, t
 
 My thanks go to Alan Faver For including me in her arrangements. Our grief is different. A mother's love is beyond explaining. Alan loved her with his deepest love. The pain is real for all of us. Pray for us all as we make this journey. Prayers of peace and love for everyone. Thank you all for caring
 
-![image](https://static.wixstatic.com/media/98a108_0a1e39bad10d4e5182340de24b610bec~mv2.jpg/v1/fill/w_250,h_250,fp_0.50_0.50,q_30,blur_30/98a108_0a1e39bad10d4e5182340de24b610bec~mv2.jpg)
+![image](./images/98a108_0a1e39bad10d4e5182340de24b610bec~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_0a1e39bad10d4e5182340de24b610bec~mv2.jpg/v1/fill/w_323,h_323,fp_0.50_0.50,q_90/98a108_0a1e39bad10d4e5182340de24b610bec~mv2.jpg)
+![image](./images/98a108_0a1e39bad10d4e5182340de24b610bec~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_de338ffa54744fb5bf6f75c4135e7196~mv2.jpg/v1/fill/w_251,h_250,fp_0.50_0.50,q_30,blur_30/98a108_de338ffa54744fb5bf6f75c4135e7196~mv2.jpg)
+![image](./images/98a108_de338ffa54744fb5bf6f75c4135e7196~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_de338ffa54744fb5bf6f75c4135e7196~mv2.jpg/v1/fill/w_324,h_323,fp_0.50_0.50,q_90/98a108_de338ffa54744fb5bf6f75c4135e7196~mv2.jpg)
+![image](./images/98a108_de338ffa54744fb5bf6f75c4135e7196~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_c6c11b3e7e9d4d8b80b937776b05f8d4~mv2.jpg/v1/fill/w_250,h_250,fp_0.50_0.50,q_30,blur_30/98a108_c6c11b3e7e9d4d8b80b937776b05f8d4~mv2.jpg)
+![image](./images/98a108_c6c11b3e7e9d4d8b80b937776b05f8d4~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_c6c11b3e7e9d4d8b80b937776b05f8d4~mv2.jpg/v1/fill/w_323,h_323,fp_0.50_0.50,q_90/98a108_c6c11b3e7e9d4d8b80b937776b05f8d4~mv2.jpg)
+![image](./images/98a108_c6c11b3e7e9d4d8b80b937776b05f8d4~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_b44f1675e0c1450c991f25e56915cbba~mv2.jpg/v1/fill/w_250,h_250,fp_0.50_0.50,q_30,blur_30/98a108_b44f1675e0c1450c991f25e56915cbba~mv2.jpg)
+![image](./images/98a108_b44f1675e0c1450c991f25e56915cbba~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_b44f1675e0c1450c991f25e56915cbba~mv2.jpg/v1/fill/w_323,h_323,fp_0.50_0.50,q_90/98a108_b44f1675e0c1450c991f25e56915cbba~mv2.jpg)
+![image](./images/98a108_b44f1675e0c1450c991f25e56915cbba~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_0024459c0ddc4230ba7324299abfcb2f~mv2.jpg/v1/fill/w_251,h_250,fp_0.50_0.50,q_30,blur_30/98a108_0024459c0ddc4230ba7324299abfcb2f~mv2.jpg)
+![image](./images/98a108_0024459c0ddc4230ba7324299abfcb2f~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_0024459c0ddc4230ba7324299abfcb2f~mv2.jpg/v1/fill/w_324,h_323,fp_0.50_0.50,q_90/98a108_0024459c0ddc4230ba7324299abfcb2f~mv2.jpg)
+![image](./images/98a108_0024459c0ddc4230ba7324299abfcb2f~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_3080d0bb141c45edb775b3c3c0d7ff14~mv2.jpg/v1/fill/w_203,h_250,fp_0.50_0.50,q_30,blur_30/98a108_3080d0bb141c45edb775b3c3c0d7ff14~mv2.jpg)
+![image](./images/98a108_3080d0bb141c45edb775b3c3c0d7ff14~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_3080d0bb141c45edb775b3c3c0d7ff14~mv2.jpg/v1/fill/w_261,h_323,fp_0.50_0.50,q_90/98a108_3080d0bb141c45edb775b3c3c0d7ff14~mv2.jpg)
+![image](./images/98a108_3080d0bb141c45edb775b3c3c0d7ff14~mv2-1.jpg)
 
 There will also be a memorial on the Tribal Grounds on August 28 beginning at 10 Am.
 

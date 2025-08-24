@@ -27,15 +27,15 @@ Don't forget to check out the Facebook page and Like the events:
 
 3/1: Longhouse Project
 
-![ree](https://static.wixstatic.com/media/98a108_539695f21a414365b7a397fec0543a13~mv2.png/v1/fill/w_49,h_63,al_c,q_85,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/98a108_539695f21a414365b7a397fec0543a13~mv2.png)
+![ree](./images/98a108_539695f21a414365b7a397fec0543a13~mv2-1.png)
 
 3/8: Veterans Stand Down
 
-![ree](https://static.wixstatic.com/media/98a108_b27ab86a19e94b6794680c74730a1cb4~mv2.png/v1/fill/w_49,h_49,al_c,q_85,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/98a108_b27ab86a19e94b6794680c74730a1cb4~mv2.png)
+![ree](./images/98a108_b27ab86a19e94b6794680c74730a1cb4~mv2-1.png)
 
 3/22: Spring Equinox & Invasive Species Removal
 
-![ree](https://static.wixstatic.com/media/98a108_9a19bd653e364d4b95b754dcf715c468~mv2.png/v1/fill/w_49,h_49,al_c,q_85,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/98a108_9a19bd653e364d4b95b754dcf715c468~mv2.png)
+![ree](./images/98a108_9a19bd653e364d4b95b754dcf715c468~mv2-1.png)
 
 Tags:
 

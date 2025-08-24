@@ -17,7 +17,7 @@ Michelle Hatcher
 - Jan 6, 2024
 - 1 min read
 
-![ree](https://static.wixstatic.com/media/98a108_d4f70942a5d14e23b0de1a17723f9517~mv2.jpg/v1/fill/w_121,h_70,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/98a108_d4f70942a5d14e23b0de1a17723f9517~mv2.jpg)
+![ree](./images/98a108_d4f70942a5d14e23b0de1a17723f9517~mv2-1.jpg)
 
 Members, it's that time again- look at your ID card and see if the address is correct and that it hasn't expired.
 

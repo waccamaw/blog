@@ -19,7 +19,7 @@ Michelle Hatcher
 
 Updated: Mar 17, 2023
 
-![ree](https://static.wixstatic.com/media/e51f96_476b48856f3b48738318016a2aaf83d0~mv2.jpg/v1/fill/w_126,h_71,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/e51f96_476b48856f3b48738318016a2aaf83d0~mv2.jpg)
+![ree](./images/e51f96_476b48856f3b48738318016a2aaf83d0~mv2-1.jpg)
 
 Tribal Open Meeting Summary 3/3/2023  held at the tribal office and via Zoom
 

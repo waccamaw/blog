@@ -21,13 +21,13 @@ Thanks for helping with the ribbon-cutting for the Ecological and Cultural Inter
 
 Thank you to everyone who attended the ribbon-cutting!
 
-![ree](https://static.wixstatic.com/media/98a108_7e82e9726b4c46a4a14f6975afae103a~mv2.jpg/v1/fill/w_147,h_98,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/98a108_7e82e9726b4c46a4a14f6975afae103a~mv2.jpg)
+![ree](./images/98a108_7e82e9726b4c46a4a14f6975afae103a~mv2-1.jpg)
 
-![ree](https://static.wixstatic.com/media/98a108_6bbc9e823f0d4cd895c66b6f0b549359~mv2.jpg/v1/fill/w_147,h_98,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/98a108_6bbc9e823f0d4cd895c66b6f0b549359~mv2.jpg)
+![ree](./images/98a108_6bbc9e823f0d4cd895c66b6f0b549359~mv2-1.jpg)
 
-![ree](https://static.wixstatic.com/media/98a108_a9322f3353cc4bae98c543a85fabf21d~mv2.jpg/v1/fill/w_147,h_98,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/98a108_a9322f3353cc4bae98c543a85fabf21d~mv2.jpg)
+![ree](./images/98a108_a9322f3353cc4bae98c543a85fabf21d~mv2-1.jpg)
 
-![ree](https://static.wixstatic.com/media/98a108_c1a63170a2cb4a6ea7ad625bfd479529~mv2.jpg/v1/fill/w_147,h_98,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/98a108_c1a63170a2cb4a6ea7ad625bfd479529~mv2.jpg)
+![ree](./images/98a108_c1a63170a2cb4a6ea7ad625bfd479529~mv2-1.jpg)
 
-![ree](https://static.wixstatic.com/media/98a108_ad33e4b9cced4d01aede96ac77ccc9f4~mv2.jpg/v1/fill/w_147,h_98,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/98a108_ad33e4b9cced4d01aede96ac77ccc9f4~mv2.jpg)
+![ree](./images/98a108_ad33e4b9cced4d01aede96ac77ccc9f4~mv2-1.jpg)
 

@@ -17,7 +17,7 @@ Michelle Hatcher
 - Jan 25, 2023
 - 4 min read
 
-![ree](https://static.wixstatic.com/media/e51f96_476b48856f3b48738318016a2aaf83d0~mv2.jpg/v1/fill/w_126,h_71,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/e51f96_476b48856f3b48738318016a2aaf83d0~mv2.jpg)
+![ree](./images/e51f96_476b48856f3b48738318016a2aaf83d0~mv2-1.jpg)
 
 Tribal Open Meeting Summary 1/13/2023  held at the tribal office and via Zoom
 
@@ -311,7 +311,7 @@ We are looking for someone to do it; can be done remotely, preferably with Adobe
 
         1.
 
-Email Michelle at [[email protected]](/cdn-cgi/l/email-protection#45322c356b35202a352920366b2429292c242b2620052228242c296b262a28) if interested
+Email Michelle at [[email protected]](/cdn-cgi/l/email-protection#ff88968fd18f9a908f939a8cd19e9393969e919c9abf98929e9693d19c9092) if interested
 
         2.
 

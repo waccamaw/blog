@@ -19,7 +19,7 @@ Michelle Hatcher
 
 Due to an extreme weather and wind advisory, no meeting will be tomorrow tonight. Stay safe everyone! The next open meeting will be on the first Friday in February.
 
-![ree](https://static.wixstatic.com/media/98a108_7c9fe9a4dde748edb90f891337111fa9~mv2.jpg/v1/fill/w_147,h_98,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/98a108_7c9fe9a4dde748edb90f891337111fa9~mv2.jpg)
+![ree](./images/98a108_7c9fe9a4dde748edb90f891337111fa9~mv2-1.jpg)
 
 Tags:
 

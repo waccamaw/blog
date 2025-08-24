@@ -30,53 +30,53 @@ Many of us were lucky enough to witness his gifts at school events and tribal ga
 
 While we mourn his loss, let us also celebrate the powerful life he led and the beautiful legacy he leaves behind. The rhythm of his dance will forever echo in our hearts, and he will be missed by everyone who had the honor of watching him perform.
 
-![image](https://static.wixstatic.com/media/98a108_1ec9f31ea77e4d228e3c078526c6f2e8~mv2.jpg/v1/fill/w_490,h_250,fp_0.50_0.50,q_30,blur_30/98a108_1ec9f31ea77e4d228e3c078526c6f2e8~mv2.jpg)
+![image](./images/98a108_1ec9f31ea77e4d228e3c078526c6f2e8~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_1ec9f31ea77e4d228e3c078526c6f2e8~mv2.jpg/v1/fill/w_980,h_500,fp_0.50_0.50,q_90/98a108_1ec9f31ea77e4d228e3c078526c6f2e8~mv2.jpg)
+![image](./images/98a108_1ec9f31ea77e4d228e3c078526c6f2e8~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_d26a7d6341f241ae94933bbb7722f681~mv2.jpg/v1/fill/w_490,h_250,fp_0.50_0.50,q_30,blur_30/98a108_d26a7d6341f241ae94933bbb7722f681~mv2.jpg)
+![image](./images/98a108_d26a7d6341f241ae94933bbb7722f681~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_d26a7d6341f241ae94933bbb7722f681~mv2.jpg/v1/fill/w_980,h_500,fp_0.50_0.50,q_90/98a108_d26a7d6341f241ae94933bbb7722f681~mv2.jpg)
+![image](./images/98a108_d26a7d6341f241ae94933bbb7722f681~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_3ef4997a481e4930a861f99be8b0e1a8~mv2.jpg/v1/fill/w_490,h_250,fp_0.50_0.50,q_30,blur_30/98a108_3ef4997a481e4930a861f99be8b0e1a8~mv2.jpg)
+![image](./images/98a108_3ef4997a481e4930a861f99be8b0e1a8~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_3ef4997a481e4930a861f99be8b0e1a8~mv2.jpg/v1/fill/w_980,h_500,fp_0.50_0.50,q_90/98a108_3ef4997a481e4930a861f99be8b0e1a8~mv2.jpg)
+![image](./images/98a108_3ef4997a481e4930a861f99be8b0e1a8~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_a88dce06dffe4cd28e44cb8a35a66a68~mv2.jpg/v1/fill/w_490,h_250,fp_0.50_0.50,q_30,blur_30/98a108_a88dce06dffe4cd28e44cb8a35a66a68~mv2.jpg)
+![image](./images/98a108_a88dce06dffe4cd28e44cb8a35a66a68~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_a88dce06dffe4cd28e44cb8a35a66a68~mv2.jpg/v1/fill/w_980,h_500,fp_0.50_0.50,q_90/98a108_a88dce06dffe4cd28e44cb8a35a66a68~mv2.jpg)
+![image](./images/98a108_a88dce06dffe4cd28e44cb8a35a66a68~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_6729ef82c7924f4dacee8a2285909fe1~mv2.jpg/v1/fill/w_490,h_250,fp_0.50_0.50,q_30,blur_30/98a108_6729ef82c7924f4dacee8a2285909fe1~mv2.jpg)
+![image](./images/98a108_6729ef82c7924f4dacee8a2285909fe1~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_6729ef82c7924f4dacee8a2285909fe1~mv2.jpg/v1/fill/w_980,h_500,fp_0.50_0.50,q_90/98a108_6729ef82c7924f4dacee8a2285909fe1~mv2.jpg)
+![image](./images/98a108_6729ef82c7924f4dacee8a2285909fe1~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_750426f793164af1b0f97ae03387e3d2~mv2.jpg/v1/fill/w_490,h_250,fp_0.50_0.50,q_30,blur_30/98a108_750426f793164af1b0f97ae03387e3d2~mv2.jpg)
+![image](./images/98a108_750426f793164af1b0f97ae03387e3d2~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_750426f793164af1b0f97ae03387e3d2~mv2.jpg/v1/fill/w_980,h_500,fp_0.50_0.50,q_90/98a108_750426f793164af1b0f97ae03387e3d2~mv2.jpg)
+![image](./images/98a108_750426f793164af1b0f97ae03387e3d2~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_60064c659107462084c6dbec79173b47~mv2.jpg/v1/fill/w_490,h_250,fp_0.50_0.50,q_30,blur_30/98a108_60064c659107462084c6dbec79173b47~mv2.jpg)
+![image](./images/98a108_60064c659107462084c6dbec79173b47~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_60064c659107462084c6dbec79173b47~mv2.jpg/v1/fill/w_980,h_500,fp_0.50_0.50,q_90/98a108_60064c659107462084c6dbec79173b47~mv2.jpg)
+![image](./images/98a108_60064c659107462084c6dbec79173b47~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_dfea8e3d9d744820ad6a6abf1782634b~mv2.jpg/v1/fill/w_490,h_250,fp_0.50_0.50,q_30,blur_30/98a108_dfea8e3d9d744820ad6a6abf1782634b~mv2.jpg)
+![image](./images/98a108_dfea8e3d9d744820ad6a6abf1782634b~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_dfea8e3d9d744820ad6a6abf1782634b~mv2.jpg/v1/fill/w_980,h_500,fp_0.50_0.50,q_90/98a108_dfea8e3d9d744820ad6a6abf1782634b~mv2.jpg)
+![image](./images/98a108_dfea8e3d9d744820ad6a6abf1782634b~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_3377516619994fda82f9385725b8fb3d~mv2.jpg/v1/fill/w_490,h_250,fp_0.50_0.50,q_30,blur_30/98a108_3377516619994fda82f9385725b8fb3d~mv2.jpg)
+![image](./images/98a108_3377516619994fda82f9385725b8fb3d~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_3377516619994fda82f9385725b8fb3d~mv2.jpg/v1/fill/w_980,h_500,fp_0.50_0.50,q_90/98a108_3377516619994fda82f9385725b8fb3d~mv2.jpg)
+![image](./images/98a108_3377516619994fda82f9385725b8fb3d~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_c2b6a30704fc4e47affbe7ba95f6feb5~mv2.jpg/v1/fill/w_490,h_250,fp_0.50_0.50,q_30,blur_30/98a108_c2b6a30704fc4e47affbe7ba95f6feb5~mv2.jpg)
+![image](./images/98a108_c2b6a30704fc4e47affbe7ba95f6feb5~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_c2b6a30704fc4e47affbe7ba95f6feb5~mv2.jpg/v1/fill/w_980,h_500,fp_0.50_0.50,q_90/98a108_c2b6a30704fc4e47affbe7ba95f6feb5~mv2.jpg)
+![image](./images/98a108_c2b6a30704fc4e47affbe7ba95f6feb5~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_dda35984619e43c991528bb1463a4a11~mv2.jpg/v1/fill/w_490,h_250,fp_0.50_0.50,q_30,blur_30/98a108_dda35984619e43c991528bb1463a4a11~mv2.jpg)
+![image](./images/98a108_dda35984619e43c991528bb1463a4a11~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_dda35984619e43c991528bb1463a4a11~mv2.jpg/v1/fill/w_980,h_500,fp_0.50_0.50,q_90/98a108_dda35984619e43c991528bb1463a4a11~mv2.jpg)
+![image](./images/98a108_dda35984619e43c991528bb1463a4a11~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_db9bbd8412a04a64876fdd423e72f7ea~mv2.jpg/v1/fill/w_490,h_250,fp_0.50_0.50,q_30,blur_30/98a108_db9bbd8412a04a64876fdd423e72f7ea~mv2.jpg)
+![image](./images/98a108_db9bbd8412a04a64876fdd423e72f7ea~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_db9bbd8412a04a64876fdd423e72f7ea~mv2.jpg/v1/fill/w_980,h_500,fp_0.50_0.50,q_90/98a108_db9bbd8412a04a64876fdd423e72f7ea~mv2.jpg)
+![image](./images/98a108_db9bbd8412a04a64876fdd423e72f7ea~mv2-1.jpg)
 
 Attendees of the visitation and funeral are invited to wear regalia if they wish.
 

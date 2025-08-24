@@ -17,7 +17,7 @@ Michelle Hatcher
 - Jun 8, 2022
 - 1 min read
 
-![ree](https://static.wixstatic.com/media/98a108_4ad88d02d5fd4f448e89104c7482be82~mv2.jpg/v1/fill/w_144,h_160,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/98a108_4ad88d02d5fd4f448e89104c7482be82~mv2.jpg)
+![ree](./images/98a108_4ad88d02d5fd4f448e89104c7482be82~mv2-1.jpg)
 
 Summer Equinox: Fire ceremony will be Saturday, June 18 at 6:05am, 12:00 noon, and 7:00 pm.  Will you be joining us?
 

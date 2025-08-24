@@ -21,7 +21,7 @@ This is your blog post. Blogs are a great way to connect with your audience and 
 
 Great looking images make your blog posts more visually compelling for your audience, so choose images that really wow. Adding fun and compelling videos is another great way to engage your audience and keep them coming back for more. And to organize your posts according to subject-matter, define a ‘Category’ for each post in the Blog Manager.
 
-![image](https://static.wixstatic.com/media/5ca8a97313144b66bd93da08b0f01151.jpg/v1/fill/w_147,h_98,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/5ca8a97313144b66bd93da08b0f01151.jpg)
+![image](./images/5ca8a97313144b66bd93da08b0f01151-1.jpg)
 
 [#helping](https://www.waccamaw.org/updates/hashtags/helping) [#donations](https://www.waccamaw.org/updates/hashtags/donations)
 

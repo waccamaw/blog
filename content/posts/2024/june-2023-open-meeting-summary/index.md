@@ -17,9 +17,9 @@ Michelle Hatcher
 - Jun 28, 2023
 - 5 min read
 
-![image](https://static.wixstatic.com/media/e51f96_476b48856f3b48738318016a2aaf83d0~mv2.jpg/v1/fill/w_250,h_250,fp_0.50_0.50,q_30,blur_30/e51f96_476b48856f3b48738318016a2aaf83d0~mv2.jpg)
+![image](./images/e51f96_476b48856f3b48738318016a2aaf83d0~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/e51f96_476b48856f3b48738318016a2aaf83d0~mv2.jpg/v1/fill/w_323,h_323,fp_0.50_0.50,q_90/e51f96_476b48856f3b48738318016a2aaf83d0~mv2.jpg)
+![image](./images/e51f96_476b48856f3b48738318016a2aaf83d0~mv2-1.jpg)
 
 Tribal Open Meeting Summary 6/2/2023  held at the tribal office and via Zoom
 

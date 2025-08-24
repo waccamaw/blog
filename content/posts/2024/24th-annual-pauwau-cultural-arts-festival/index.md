@@ -17,7 +17,7 @@ Doug Hatcher
 - Aug 10, 2016
 - 1 min read
 
-![image](https://static.wixstatic.com/media/87bda5_1331287b5590413a8521b11f0bef002a~mv2_d_2048_1365_s_2.jpg/v1/fill/w_147,h_98,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/87bda5_1331287b5590413a8521b11f0bef002a~mv2_d_2048_1365_s_2.jpg)
+![image](./images/87bda5_1331287b5590413a8521b11f0bef002a~mv2_d_2048_1365_s_2-1.jpg)
 
 Our 24th Annual Cultural Arts Festival & Pauwau will be held Saturday, November 5th and Sunday, November 6th, 2016 at the tribal grounds, 591 Bluewater Rd, Aynor, SC.  We invite you to join us for the event.  The gates will open at 11:00 AM on both days.  There will be two Grand Entries on Saturday, held at 1:00 PM and 6:00 PM.  On Sunday there will be one Grand Entry held at 2:00 PM.
 

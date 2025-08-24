@@ -27,7 +27,7 @@ Update: 12/14/2024:
 
 We would like to thank everyone who attended the winter solstice today. We are grateful to the Creator for beautiful weather and seeing new faces.  We enjoyed great fellowship,  food, and a sense of community. We had our first talking circle with Kaya Littleturtle and his family. Led by Kaya, the experience brought our two tribes together and we learned more about the Good Mind Initiative. We hope to continue this by having another talking circle in January. The date is undetermined; however, we will keep you informed through our various social media posts and the tribal website calendar.
 
-![ree](https://static.wixstatic.com/media/98a108_6729f87e528f4bfeb4833efcf103e1e1~mv2.png/v1/fill/w_49,h_49,al_c,q_85,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/98a108_6729f87e528f4bfeb4833efcf103e1e1~mv2.png)
+![ree](./images/98a108_6729f87e528f4bfeb4833efcf103e1e1~mv2-1.png)
 
 Tags:
 

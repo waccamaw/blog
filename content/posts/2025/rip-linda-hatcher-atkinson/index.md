@@ -18,7 +18,7 @@ Michelle Hatcher
 - Apr 12
 - 2 min read
 
-![ree](https://static.wixstatic.com/media/98a108_a40a4c8398c64f0889c6ce1efd7b9890~mv2.jpg/v1/fill/w_147,h_261,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/98a108_a40a4c8398c64f0889c6ce1efd7b9890~mv2.jpg)
+![ree](./images/98a108_a40a4c8398c64f0889c6ce1efd7b9890~mv2-1.jpg)
 
 It is with a heavy heart that we bid farewell to Elder Linda Hatcher Atkinson, a woman whose spirit was as strong and enduring as the land of her Waccamaw Indian ancestors. Linda was a loving mother, grandmother, sister, and cousin, her heart overflowing with warmth and devotion for her family. They were her constant joy, and her love will undoubtedly live on through them.
 
@@ -32,67 +32,67 @@ Though we mourn her passing, let us also celebrate the life of a woman who loved
 
 [https://www.goldfinchfuneralhome.com/obituaries/linda-atkinson-5/?fbclid=IwY2xjawJnXVFleHRuA2FlbQIxMQABHppdPkfYij5BjcH1znCIL3XSIVOsGF4jigTp6TphrcmBxk_0XhX-C-3eVWaH_aem_qMWEC4ZwPp8nL5a5S0miig#!/TributeWall](https://www.goldfinchfuneralhome.com/obituaries/linda-atkinson-5/?fbclid=IwY2xjawJnXVFleHRuA2FlbQIxMQABHppdPkfYij5BjcH1znCIL3XSIVOsGF4jigTp6TphrcmBxk_0XhX-C-3eVWaH_aem_qMWEC4ZwPp8nL5a5S0miig#!/TributeWall)
 
-![image](https://static.wixstatic.com/media/98a108_558b8bc31da04e7fa950f8c679e67dc4~mv2.jpg/v1/fill/w_490,h_250,fp_0.50_0.50,q_30,blur_30/98a108_558b8bc31da04e7fa950f8c679e67dc4~mv2.jpg)
+![image](./images/98a108_558b8bc31da04e7fa950f8c679e67dc4~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_558b8bc31da04e7fa950f8c679e67dc4~mv2.jpg/v1/fill/w_980,h_500,fp_0.50_0.50,q_90/98a108_558b8bc31da04e7fa950f8c679e67dc4~mv2.jpg)
+![image](./images/98a108_558b8bc31da04e7fa950f8c679e67dc4~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_a40a4c8398c64f0889c6ce1efd7b9890~mv2.jpg/v1/fill/w_490,h_250,fp_0.50_0.50,q_30,blur_30/98a108_a40a4c8398c64f0889c6ce1efd7b9890~mv2.jpg)
+![image](./images/98a108_a40a4c8398c64f0889c6ce1efd7b9890~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_a40a4c8398c64f0889c6ce1efd7b9890~mv2.jpg/v1/fill/w_980,h_500,fp_0.50_0.50,q_90/98a108_a40a4c8398c64f0889c6ce1efd7b9890~mv2.jpg)
+![image](./images/98a108_a40a4c8398c64f0889c6ce1efd7b9890~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_1aed5c499b1548d186b125476d831a6c~mv2.jpg/v1/fill/w_240,h_250,fp_0.50_0.50,q_30,blur_30/98a108_1aed5c499b1548d186b125476d831a6c~mv2.jpg)
+![image](./images/98a108_1aed5c499b1548d186b125476d831a6c~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_1aed5c499b1548d186b125476d831a6c~mv2.jpg/v1/fill/w_480,h_500,fp_0.50_0.50,q_90/98a108_1aed5c499b1548d186b125476d831a6c~mv2.jpg)
+![image](./images/98a108_1aed5c499b1548d186b125476d831a6c~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_7e05837a7cdb4af9af758703cd610efe~mv2.jpg/v1/fill/w_337,h_250,fp_0.50_0.50,q_30,blur_30/98a108_7e05837a7cdb4af9af758703cd610efe~mv2.jpg)
+![image](./images/98a108_7e05837a7cdb4af9af758703cd610efe~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_7e05837a7cdb4af9af758703cd610efe~mv2.jpg)
+![image](./images/98a108_7e05837a7cdb4af9af758703cd610efe~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_282441014e9242bfba3a9e1e79e0b3bc~mv2.jpg/v1/fill/w_490,h_250,fp_0.50_0.50,q_30,blur_30/98a108_282441014e9242bfba3a9e1e79e0b3bc~mv2.jpg)
+![image](./images/98a108_282441014e9242bfba3a9e1e79e0b3bc~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_282441014e9242bfba3a9e1e79e0b3bc~mv2.jpg/v1/fill/w_980,h_500,fp_0.50_0.50,q_90/98a108_282441014e9242bfba3a9e1e79e0b3bc~mv2.jpg)
+![image](./images/98a108_282441014e9242bfba3a9e1e79e0b3bc~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_84e24bc1e22d46a2abe5b775f1f98a89~mv2.jpg/v1/fill/w_188,h_250,fp_0.50_0.50,q_30,blur_30/98a108_84e24bc1e22d46a2abe5b775f1f98a89~mv2.jpg)
+![image](./images/98a108_84e24bc1e22d46a2abe5b775f1f98a89~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_84e24bc1e22d46a2abe5b775f1f98a89~mv2.jpg)
+![image](./images/98a108_84e24bc1e22d46a2abe5b775f1f98a89~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_bab004429a8949b496dc4ec51caab008~mv2.jpg/v1/fill/w_368,h_250,fp_0.50_0.50,q_30,blur_30/98a108_bab004429a8949b496dc4ec51caab008~mv2.jpg)
+![image](./images/98a108_bab004429a8949b496dc4ec51caab008~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_bab004429a8949b496dc4ec51caab008~mv2.jpg/v1/fill/w_736,h_500,fp_0.50_0.50,q_90/98a108_bab004429a8949b496dc4ec51caab008~mv2.jpg)
+![image](./images/98a108_bab004429a8949b496dc4ec51caab008~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_61f7a997e46f47f895eeeaa3de273d9c~mv2.jpg/v1/fill/w_490,h_250,fp_0.50_0.50,q_30,blur_30/98a108_61f7a997e46f47f895eeeaa3de273d9c~mv2.jpg)
+![image](./images/98a108_61f7a997e46f47f895eeeaa3de273d9c~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_61f7a997e46f47f895eeeaa3de273d9c~mv2.jpg/v1/fill/w_980,h_500,fp_0.50_0.50,q_90/98a108_61f7a997e46f47f895eeeaa3de273d9c~mv2.jpg)
+![image](./images/98a108_61f7a997e46f47f895eeeaa3de273d9c~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_26da341efe6f40b89f23c05d9420f483~mv2.jpg/v1/fill/w_490,h_250,fp_0.50_0.50,q_30,blur_30/98a108_26da341efe6f40b89f23c05d9420f483~mv2.jpg)
+![image](./images/98a108_26da341efe6f40b89f23c05d9420f483~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_26da341efe6f40b89f23c05d9420f483~mv2.jpg/v1/fill/w_980,h_500,fp_0.50_0.50,q_90/98a108_26da341efe6f40b89f23c05d9420f483~mv2.jpg)
+![image](./images/98a108_26da341efe6f40b89f23c05d9420f483~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_55e94273c24645779e42c60aa68ab7bc~mv2.jpg/v1/fill/w_490,h_250,fp_0.50_0.50,q_30,blur_30/98a108_55e94273c24645779e42c60aa68ab7bc~mv2.jpg)
+![image](./images/98a108_55e94273c24645779e42c60aa68ab7bc~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_55e94273c24645779e42c60aa68ab7bc~mv2.jpg/v1/fill/w_980,h_500,fp_0.50_0.50,q_90/98a108_55e94273c24645779e42c60aa68ab7bc~mv2.jpg)
+![image](./images/98a108_55e94273c24645779e42c60aa68ab7bc~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_d324f63d45cb4ee39d62247e2bd95f4a~mv2.jpg/v1/fill/w_368,h_250,fp_0.50_0.50,q_30,blur_30/98a108_d324f63d45cb4ee39d62247e2bd95f4a~mv2.jpg)
+![image](./images/98a108_d324f63d45cb4ee39d62247e2bd95f4a~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_d324f63d45cb4ee39d62247e2bd95f4a~mv2.jpg/v1/fill/w_736,h_500,fp_0.50_0.50,q_90/98a108_d324f63d45cb4ee39d62247e2bd95f4a~mv2.jpg)
+![image](./images/98a108_d324f63d45cb4ee39d62247e2bd95f4a~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_eb2dfe48b8d34caaa87f304b354ad953~mv2.jpg/v1/fill/w_334,h_250,fp_0.50_0.50,q_30,blur_30/98a108_eb2dfe48b8d34caaa87f304b354ad953~mv2.jpg)
+![image](./images/98a108_eb2dfe48b8d34caaa87f304b354ad953~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_eb2dfe48b8d34caaa87f304b354ad953~mv2.jpg)
+![image](./images/98a108_eb2dfe48b8d34caaa87f304b354ad953~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_8f7822d4c8b44c71886bd89e14837759~mv2.jpg/v1/fill/w_490,h_250,fp_0.50_0.50,q_30,blur_30/98a108_8f7822d4c8b44c71886bd89e14837759~mv2.jpg)
+![image](./images/98a108_8f7822d4c8b44c71886bd89e14837759~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_8f7822d4c8b44c71886bd89e14837759~mv2.jpg/v1/fill/w_980,h_500,fp_0.50_0.50,q_90/98a108_8f7822d4c8b44c71886bd89e14837759~mv2.jpg)
+![image](./images/98a108_8f7822d4c8b44c71886bd89e14837759~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_35ff078be02a491b96e91b42cb34ef08~mv2.jpg/v1/fill/w_490,h_250,fp_0.50_0.50,q_30,blur_30/98a108_35ff078be02a491b96e91b42cb34ef08~mv2.jpg)
+![image](./images/98a108_35ff078be02a491b96e91b42cb34ef08~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_35ff078be02a491b96e91b42cb34ef08~mv2.jpg/v1/fill/w_980,h_500,fp_0.50_0.50,q_90/98a108_35ff078be02a491b96e91b42cb34ef08~mv2.jpg)
+![image](./images/98a108_35ff078be02a491b96e91b42cb34ef08~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_7956f0e03ee04d47af1c8b8482e230c1~mv2.jpg/v1/fill/w_188,h_250,fp_0.50_0.50,q_30,blur_30/98a108_7956f0e03ee04d47af1c8b8482e230c1~mv2.jpg)
+![image](./images/98a108_7956f0e03ee04d47af1c8b8482e230c1~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_7956f0e03ee04d47af1c8b8482e230c1~mv2.jpg)
+![image](./images/98a108_7956f0e03ee04d47af1c8b8482e230c1~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_83dcab770e43440a80cf6aca560b6d9c~mv2.jpg/v1/fill/w_490,h_250,fp_0.50_0.50,q_30,blur_30/98a108_83dcab770e43440a80cf6aca560b6d9c~mv2.jpg)
+![image](./images/98a108_83dcab770e43440a80cf6aca560b6d9c~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_83dcab770e43440a80cf6aca560b6d9c~mv2.jpg/v1/fill/w_980,h_500,fp_0.50_0.50,q_90/98a108_83dcab770e43440a80cf6aca560b6d9c~mv2.jpg)
+![image](./images/98a108_83dcab770e43440a80cf6aca560b6d9c~mv2-1.jpg)
 

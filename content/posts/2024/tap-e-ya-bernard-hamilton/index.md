@@ -31,17 +31,17 @@ I'm sorry for our collective loss.
 
 Buster
 
-![image](https://static.wixstatic.com/media/98a108_508c0779dbdd45a2b45659d06f7b9c3b~mv2.jpg/v1/fill/w_167,h_250,al_c,q_30,blur_30/98a108_508c0779dbdd45a2b45659d06f7b9c3b~mv2.jpg)
+![image](./images/98a108_508c0779dbdd45a2b45659d06f7b9c3b~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_508c0779dbdd45a2b45659d06f7b9c3b~mv2.jpg/v1/fill/w_490,h_734,al_c,q_90/98a108_508c0779dbdd45a2b45659d06f7b9c3b~mv2.jpg)
+![image](./images/98a108_508c0779dbdd45a2b45659d06f7b9c3b~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_d9feed58e55e4e86843bf9ca0cd5d3da~mv2.jpg/v1/fill/w_167,h_250,al_c,q_30,blur_30/98a108_d9feed58e55e4e86843bf9ca0cd5d3da~mv2.jpg)
+![image](./images/98a108_d9feed58e55e4e86843bf9ca0cd5d3da~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_d9feed58e55e4e86843bf9ca0cd5d3da~mv2.jpg/v1/fill/w_490,h_734,al_c,q_90/98a108_d9feed58e55e4e86843bf9ca0cd5d3da~mv2.jpg)
+![image](./images/98a108_d9feed58e55e4e86843bf9ca0cd5d3da~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_0e20c40832314737abb92152b1c86a15~mv2.jpg/v1/fill/w_167,h_250,al_c,q_30,blur_30/98a108_0e20c40832314737abb92152b1c86a15~mv2.jpg)
+![image](./images/98a108_0e20c40832314737abb92152b1c86a15~mv2-1.jpg)
 
-![image](https://static.wixstatic.com/media/98a108_0e20c40832314737abb92152b1c86a15~mv2.jpg/v1/fill/w_490,h_735,al_c,q_90/98a108_0e20c40832314737abb92152b1c86a15~mv2.jpg)
+![image](./images/98a108_0e20c40832314737abb92152b1c86a15~mv2-1.jpg)
 
 Tags:
 

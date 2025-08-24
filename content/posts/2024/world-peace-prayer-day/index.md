@@ -17,7 +17,7 @@ Doug Hatcher
 - Jun 7, 2017
 - 2 min read
 
-![image](https://static.wixstatic.com/media/98a108_773bdd68b18349e09b6e44f29937f5e0~mv2.jpg/v1/fill/w_75,h_75,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/98a108_773bdd68b18349e09b6e44f29937f5e0~mv2.jpg)
+![image](./images/98a108_773bdd68b18349e09b6e44f29937f5e0~mv2-1.jpg)
 
 World Peace and Prayer Day, South Carolina will coincide with the main gathering on Hawai'i Island on Mauna Kea, where the South Carolina Indian Affairs Commission will have a delegate.
 
