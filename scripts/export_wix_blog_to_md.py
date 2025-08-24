@@ -205,6 +205,56 @@ def download_file(url: str, dest: pathlib.Path) -> bool:
         return False
 
 
+def _parse_front_matter(path: pathlib.Path) -> Dict[str, Any]:
+    """Parse minimal YAML front matter from an index.md written by this tool."""
+    try:
+        txt = path.read_text(encoding="utf-8")
+    except Exception:
+        return {}
+    if not txt.startswith("---\n"):
+        return {}
+    parts = txt.split("\n---\n", 1)
+    if len(parts) < 2:
+        return {}
+    fm_text = parts[0][4:]  # strip leading '---\n'
+    data: Dict[str, Any] = {}
+    current_key: Optional[str] = None
+    list_mode = False
+    for line in fm_text.splitlines():
+        if not line.strip():
+            continue
+        if line.startswith("  - ") and current_key:
+            # list item
+            item = line[4:]
+            if item.startswith('"') and item.endswith('"'):
+                item = item[1:-1].replace('\\"', '"').replace('\\\\', '\\')
+            data.setdefault(current_key, []).append(item)
+            list_mode = True
+            continue
+        # new key
+        m = re.match(r"([A-Za-z0-9_]+):\s*(.*)$", line)
+        if not m:
+            continue
+        key, val = m.group(1), m.group(2)
+        current_key = key
+        list_mode = False
+        if val == "":
+            data[key] = []
+        else:
+            if val.startswith('"') and val.endswith('"'):
+                val = val[1:-1].replace('\\"', '"').replace('\\\\', '\\')
+            data[key] = val
+    return data
+
+
+def _existing_last_modified(index_md: pathlib.Path) -> Optional[dt.datetime]:
+    fm = _parse_front_matter(index_md)
+    s = fm.get("lastmod") or fm.get("date")
+    if isinstance(s, str):
+        return parse_iso_date(s) or parse_rfc822_date(s)  # tolerate either
+    return None
+
+
 def ext_from_url(url: str, default: str = ".jpg") -> str:
     path = urllib.parse.urlparse(url).path
     _, ext = os.path.splitext(path)
@@ -283,15 +333,18 @@ def download_inline_images(html_body: str, folder: pathlib.Path) -> Tuple[str, i
             return full
         # Derive filename
         base = os.path.basename(urllib.parse.urlparse(url).path) or f"image-{count}.jpg"
-        # De-duplicate
+        # Deterministic destination path
         dest = folder / base
         i = 1
-        while dest.exists():
+        while dest.exists() and i < 2:  # keep original name if exists
             name, ext = os.path.splitext(base)
             dest = folder / f"{name}-{i}{ext}"
             i += 1
         # Try largest/original first, then fallback
         ok = False
+        # If the preferred dest already exists, reuse it without downloading
+        if (folder / base).exists():
+            ok = True
         for cand in largest_image_candidates(url):
             if download_file(cand, dest):
                 ok = True
@@ -347,14 +400,16 @@ def rewrite_markdown_images(md: str, folder: pathlib.Path) -> Tuple[str, int]:
         if not is_image_url(u):
             return None
         # Use canonical key to derive filename, so variants map consistently
-        base = os.path.basename(urllib.parse.urlparse(key).path) or f"image-{count}.jpg"
+        base = os.path.basename(urllib.parse.urlparse(u).path) or f"image-{count}.jpg"
         dest = folder / base
         i = 1
-        while dest.exists():
+        while dest.exists() and i < 2:
             name, ext = os.path.splitext(base)
             dest = folder / f"{name}-{i}{ext}"
             i += 1
         ok = False
+        if (folder / base).exists():
+            ok = True
         for cand in largest_image_candidates(u):
             if download_file(cand, dest):
                 ok = True
@@ -429,11 +484,14 @@ def rewrite_markdown_documents(md: str, folder: pathlib.Path) -> Tuple[str, int]
         base = os.path.basename(pu.path) or f"file-{count}.bin"
         dest = folder / base
         i = 1
-        while dest.exists():
+        while dest.exists() and i < 2:
             name, ext = os.path.splitext(base)
             dest = folder / f"{name}-{i}{ext}"
             i += 1
-        ok = download_file(u, dest)
+        if (folder / base).exists():
+            ok = True
+        else:
+            ok = download_file(u, dest)
         if not ok:
             return None
         count += 1
@@ -557,11 +615,13 @@ def rewrite_bare_doc_filenames(md: str, page_url: Optional[str], folder: pathlib
         # Download
         dest = folder / name
         i = 1
-        while dest.exists():
+        while dest.exists() and i < 2:
             stem, ext = os.path.splitext(name)
             dest = folder / f"{stem}-{i}{ext}"
             i += 1
-        if not download_file(url, dest):
+        if (folder / name).exists():
+            pass
+        elif not download_file(url, dest):
             return name
         local = f"./{folder.name}/{dest.name}"
         downloaded[name] = local
@@ -889,6 +949,8 @@ def write_markdown(
         ext = ext_from_url(enclosure)
         hero_path = folder / f"featured{ext}"
         ok = False
+        if hero_path.exists():
+            ok = True
         for cand in largest_image_candidates(enclosure):
             if download_file(cand, hero_path):
                 ok = True
@@ -975,7 +1037,7 @@ def write_markdown(
     return index_md
 
 
-def export_posts(base_url: str, out_dir: str, structure: str, limit: Optional[int], download_hero: bool, scrape_if_missing: bool, download_inline: bool, body_format: str) -> Tuple[int, pathlib.Path]:
+def export_posts(base_url: str, out_dir: str, structure: str, limit: Optional[int], download_hero: bool, scrape_if_missing: bool, download_inline: bool, body_format: str, only_changed: bool = False) -> Tuple[int, pathlib.Path]:
     base = guess_base_url(base_url)
     out_root = pathlib.Path(out_dir)
     ensure_dir(out_root)
@@ -1004,6 +1066,29 @@ def export_posts(base_url: str, out_dir: str, structure: str, limit: Optional[in
 
     written = 0
     for _, post in items:
+        # Skip unchanged posts if requested
+        if only_changed:
+            # Compute target folder/index path
+            # Reuse logic from write_markdown to derive folder
+            pub_dt = parse_rfc822_date(post.get("published", ""))
+            lastmod_dt = parse_iso_date(post.get("lastmod", ""))
+            date_dt = pub_dt or lastmod_dt or dt.datetime.now(dt.timezone.utc)
+            year = f"{date_dt.year:04d}"
+            slug = slug_from_url(post.get("url", "")) if post.get("url") else path_safe_slug(post.get("title", "post"))
+            if structure == "year/slug":
+                folder = out_root / year / slug
+            elif structure == "year/month/slug":
+                folder = out_root / year / f"{date_dt.month:02d}" / slug
+            elif structure == "flat":
+                folder = out_root / slug
+            else:
+                folder = out_root / year / slug
+            index_md = folder / "index.md"
+            if index_md.exists():
+                local_dt = _existing_last_modified(index_md)
+                remote_dt = parse_iso_date(post.get("lastmod", "")) or parse_rfc822_date(post.get("published", ""))
+                if local_dt and remote_dt and remote_dt <= local_dt:
+                    continue
         write_markdown(
             post,
             out_root,
@@ -1027,6 +1112,7 @@ def main(argv: Optional[List[str]] = None) -> int:
     ap.add_argument("--scrape", action="store_true", help="Scrape page HTML to fill missing content")
     ap.add_argument("--download-inline-images", action="store_true", help="Download inline images and rewrite references (supports html and markdown body formats)")
     ap.add_argument("--body-format", choices=["html", "markdown", "plain"], default="markdown", help="Body output format in Markdown file")
+    ap.add_argument("--only-changed", action="store_true", help="Only export posts whose lastmod/published is newer than local index.md")
     args = ap.parse_args(argv)
 
     if not args.base_url:
@@ -1042,6 +1128,7 @@ def main(argv: Optional[List[str]] = None) -> int:
     scrape_if_missing=args.scrape,
     download_inline=args.download_inline_images,
     body_format=args.body_format,
+    only_changed=args.only_changed,
     )
     print(f"Exported {count} posts to {out_root}")
     return 0

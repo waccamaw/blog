@@ -23,12 +23,19 @@ jobs:
       - name: Install dependencies
         run: |
           python -V
+          # No external deps; stdlib only
       
-      - name: Export posts
+      - name: Export posts (markdown with inline media & docs)
         env:
           SOURCE_URL: ${{ vars.SOURCE_URL }}
+          DOC_URL_HINTS: ${{ vars.DOC_URL_HINTS }}
         run: |
-          python scripts/export_wix_blog_to_md.py --out-dir content/posts --structure year/slug --scrape --body-format markdown
+          python scripts/export_wix_blog_to_md.py \
+            --out-dir content/posts \
+            --structure year/slug \
+            --scrape \
+            --body-format markdown \
+            --download-inline-images
 
       - name: Commit and push changes
         env:
