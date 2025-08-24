@@ -178,6 +178,36 @@ def ext_from_url(url: str, default: str = ".jpg") -> str:
     return ext or default
 
 
+def largest_image_candidates(url: str) -> List[str]:
+    """Return best-effort list of image URL candidates preferring the largest/original.
+
+    For Wix static URLs (static.wixstatic.com), we strip any transformation segment like
+    /v1/fill/... or /v1/fit/... to use the original asset path. Query params are dropped.
+    """
+    try:
+        pu = urllib.parse.urlparse(url)
+        path = pu.path
+        # Drop any transformer path that follows the original asset (starts with /v1/)
+        if "/v1/" in path:
+            path = path.split("/v1/", 1)[0]
+        # Rebuild without query/fragment
+        normalized = urllib.parse.urlunparse((pu.scheme, pu.netloc, path, "", "", ""))
+        candidates = []
+        if normalized and normalized != url:
+            candidates.append(normalized)
+        candidates.append(url)
+        # De-dup while preserving order
+        seen = set()
+        uniq: List[str] = []
+        for c in candidates:
+            if c not in seen:
+                seen.add(c)
+                uniq.append(c)
+        return uniq
+    except Exception:
+        return [url]
+
+
 def extract_article_from_html(page_html: str) -> Optional[str]:
     # Try <article>...</article>
     m = re.search(r"<article[\s\S]*?</article>", page_html, re.I)
@@ -227,12 +257,62 @@ def download_inline_images(html_body: str, folder: pathlib.Path) -> Tuple[str, i
             name, ext = os.path.splitext(base)
             dest = folder / f"{name}-{i}{ext}"
             i += 1
-        if download_file(url, dest):
+        # Try largest/original first, then fallback
+        ok = False
+        for cand in largest_image_candidates(url):
+            if download_file(cand, dest):
+                ok = True
+                break
+        if ok:
             count += 1
             return full.replace(url, f"./{folder.name}/{dest.name}")
         return full
     new_html = re.sub(r"<img[^>]+src=\"([^\"]+)\"[^>]*>", repl, html_body, flags=re.I)
     return new_html, count
+
+
+def rewrite_markdown_images(md: str, folder: pathlib.Path) -> Tuple[str, int]:
+    """Download all remote images referenced by Markdown ![alt](url) and rewrite to local paths.
+
+    Returns: (new_markdown, downloaded_count)
+    """
+    ensure_dir(folder)
+    count = 0
+
+    def repl(m: re.Match) -> str:
+        nonlocal count
+        alt = m.group(1) or ""
+        url = m.group(2) or ""
+        title = (m.group(3) or "").strip()
+        if not url or (not url.startswith("http://") and not url.startswith("https://")):
+            return m.group(0)
+        base = os.path.basename(urllib.parse.urlparse(url).path) or f"image-{count}.jpg"
+        dest = folder / base
+        i = 1
+        while dest.exists():
+            name, ext = os.path.splitext(base)
+            dest = folder / f"{name}-{i}{ext}"
+            i += 1
+        ok = False
+        for cand in largest_image_candidates(url):
+            if download_file(cand, dest):
+                ok = True
+                break
+        if ok:
+            count += 1
+            local = f"./{folder.name}/{dest.name}"
+            if title:
+                return f"![{alt}]({local} \"{title}\")"
+            else:
+                return f"![{alt}]({local})"
+        return m.group(0)
+    # Pass 1: raw title quotes
+    pattern1 = re.compile(r"!\[([^\]]*)\]\(([^)\s]+)(?:\s+\"([^\"]*)\")?\)")
+    md = pattern1.sub(repl, md)
+    # Pass 2: HTML-escaped title quotes &quot;
+    pattern2 = re.compile(r"!\[([^\]]*)\]\(([^)\s]+)(?:\s+&quot;([^&]*)&quot;)?\)")
+    md = pattern2.sub(repl, md)
+    return md, count
 
 
 class MarkdownHTMLParser(HTMLParser):
@@ -251,8 +331,10 @@ class MarkdownHTMLParser(HTMLParser):
         self.in_em = False
         self.in_code = False
         self.in_pre = False
-    self.in_link: List[str] = []  # href stack
-    self.in_blockquote = False
+        self.in_link: List[str] = []  # href stack
+        self.in_blockquote = False
+        self.in_script = False
+        self.in_style = False
 
     def _ensure_block_sep(self, lines: int = 2) -> None:
         # Ensure a blank line separation between blocks
@@ -267,6 +349,12 @@ class MarkdownHTMLParser(HTMLParser):
     def handle_starttag(self, tag: str, attrs_list: List[Tuple[str, Optional[str]]]):
         attrs = dict(attrs_list)
         tag = tag.lower()
+        if tag in {"script", "style", "noscript"}:
+            if tag == "script":
+                self.in_script = True
+            elif tag == "style":
+                self.in_style = True
+            return
         if tag in {"p", "div", "section", "article"}:
             self._ensure_block_sep(2)
         elif tag in {"br"}:
@@ -332,10 +420,17 @@ class MarkdownHTMLParser(HTMLParser):
             if src:
                 # Represent as a link to keep content light
                 text = alt or "image"
-                self.out.append(f"[{text}]({src})")
+                # Use Markdown image syntax so we can later download and rewrite
+                self.out.append(f"![{text}]({src})")
 
     def handle_endtag(self, tag: str):
         tag = tag.lower()
+        if tag in {"script", "style", "noscript"}:
+            if tag == "script":
+                self.in_script = False
+            elif tag == "style":
+                self.in_style = False
+            return
         if tag in {"strong", "b"} and self.in_strong:
             self.out.append("**")
             self.in_strong = False
@@ -378,6 +473,8 @@ class MarkdownHTMLParser(HTMLParser):
     def handle_data(self, data: str):
         if not data:
             return
+        if self.in_script or self.in_style:
+            return
         if self.in_blockquote:
             # Prefix each non-empty line with "> "
             lines = data.splitlines()
@@ -399,8 +496,12 @@ class MarkdownHTMLParser(HTMLParser):
 
 
 def html_to_markdown(html_text: str) -> str:
+    # Remove scripts, styles, and noscript blocks before conversion
+    cleaned = re.sub(r"<script[\s\S]*?</script>", " ", html_text, flags=re.I)
+    cleaned = re.sub(r"<style[\s\S]*?</style>", " ", cleaned, flags=re.I)
+    cleaned = re.sub(r"<noscript[\s\S]*?</noscript>", " ", cleaned, flags=re.I)
     parser = MarkdownHTMLParser()
-    parser.feed(html_text)
+    parser.feed(cleaned)
     return parser.getvalue()
 
 
@@ -486,7 +587,12 @@ def write_markdown(
     if download_hero and enclosure:
         ext = ext_from_url(enclosure)
         hero_path = folder / f"featured{ext}"
-        if download_file(enclosure, hero_path):
+        ok = False
+        for cand in largest_image_candidates(enclosure):
+            if download_file(cand, hero_path):
+                ok = True
+                break
+        if ok:
             fm["image"] = f"./{hero_path.name}"
 
     # Convert body to requested format; only allow inline image rewrites when keeping HTML
@@ -497,8 +603,35 @@ def write_markdown(
             body_out, _ = download_inline_images(body_out, folder / "images")
     elif body_format == "markdown":
         body_out = html_to_markdown(body_html) if body_html else ""
+        if body_out and download_inline:
+            body_out, _ = rewrite_markdown_images(body_out, folder / "images")
     else:  # plain
         body_out = html_to_plain(body_html) if body_html else ""
+
+    # Second-chance scrape: if conversion produced no content, try fetching page and extracting broader content
+    if not body_out and scrape_if_missing and post.get("url"):
+        try:
+            page_html = http_get(post["url"]).decode("utf-8", errors="ignore")
+            extracted = extract_article_from_html(page_html)
+            if not extracted:
+                # Fallback to <main> or whole <body> if article couldn't be found
+                m = re.search(r"<main[\s\S]*?</main>", page_html, re.I)
+                if m:
+                    extracted = m.group(0)
+                else:
+                    m = re.search(r"<body[^>]*>([\s\S]*?)</body>", page_html, re.I)
+                    extracted = m.group(1) if m else ""
+            if extracted:
+                if body_format == "html":
+                    body_out = extracted
+                    if download_inline:
+                        body_out, _ = download_inline_images(body_out, folder / "images")
+                elif body_format == "markdown":
+                    body_out = html_to_markdown(extracted)
+                else:
+                    body_out = html_to_plain(extracted)
+        except Exception:
+            pass
 
     # Emit Markdown with YAML front matter; keep HTML body in Markdown
     def yaml_dump(d: Dict[str, Any]) -> str:
@@ -527,7 +660,7 @@ def write_markdown(
         md_parts.append(body_out)
         md_parts.append("")
     else:
-        md_parts.append("<!-- No content available in RSS. Consider re-running with --hydrate to scrape pages. -->")
+        md_parts.append("<!-- No content available in RSS. Consider re-running with --scrape to fetch page content. -->")
 
     index_md.write_text("\n".join(md_parts), encoding="utf-8")
     return index_md
@@ -583,7 +716,7 @@ def main(argv: Optional[List[str]] = None) -> int:
     ap.add_argument("--limit", type=int, default=None, help="Limit number of posts to export")
     ap.add_argument("--no-hero", action="store_true", help="Do not download hero/enclosure image")
     ap.add_argument("--scrape", action="store_true", help="Scrape page HTML to fill missing content")
-    ap.add_argument("--download-inline-images", action="store_true", help="Download inline images when keeping HTML body (ignored for markdown/plain)")
+    ap.add_argument("--download-inline-images", action="store_true", help="Download inline images and rewrite references (supports html and markdown body formats)")
     ap.add_argument("--body-format", choices=["html", "markdown", "plain"], default="markdown", help="Body output format in Markdown file")
     args = ap.parse_args(argv)
 

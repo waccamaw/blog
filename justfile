@@ -42,3 +42,12 @@ export-md:
 # Export content with plain-text body
 export-txt:
     python3 scripts/export_wix_blog_to_md.py --out-dir content/posts --structure year/slug --scrape --body-format plain
+
+# Export Markdown with a limit parameter
+export-md-limit limit:
+    python3 scripts/export_wix_blog_to_md.py --out-dir content/posts --structure year/slug --scrape --body-format markdown --limit {{limit}}
+
+# Clean then export Markdown with limit
+clean-export-md-limit limit:
+    just clean
+    just export-md-limit {{limit}}
