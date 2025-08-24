@@ -65,6 +65,32 @@ def http_get_text(url: str, timeout: float = 30.0) -> Optional[str]:
         return None
 
 
+def get_doc_url_hints() -> Dict[str, str]:
+    """Parse DOC_URL_HINTS env var into a map of lowercase filename -> URL.
+
+    Format examples:
+      DOC_URL_HINTS="PW2023Public.xlsx=https://download-files...., report.pdf=https://.../report.pdf"
+      DOC_URL_HINTS="one.docx=https://...;two.pdf=https://..."
+    """
+    hints: Dict[str, str] = {}
+    raw = os.getenv("DOC_URL_HINTS", "").strip()
+    if not raw:
+        return hints
+    # split by comma or semicolon
+    parts = re.split(r"[;,]\s*", raw)
+    for part in parts:
+        if not part:
+            continue
+        if "=" not in part:
+            continue
+        name, url = part.split("=", 1)
+        name = os.path.basename(name.strip()).lower()
+        url = url.strip()
+        if name and url:
+            hints[name] = url
+    return hints
+
+
 def parse_rss_full(base_url: str) -> Dict[str, Dict[str, Any]]:
     url = f"{base_url}/blog-feed.xml"
     try:
@@ -490,12 +516,16 @@ def rewrite_bare_doc_filenames(md: str, page_url: Optional[str], folder: pathlib
         return f"@@CODEFENCE{len(placeholders)-1}@@"
     work = code_fence_re.sub(_stash, md)
 
-    # Build link map from page
+    # Build link map from page + optional env hints
     doc_map: Dict[str, str] = {}
     if page_url:
         page_html = http_get_text(page_url)
         if page_html:
             doc_map = _extract_doc_links_from_html(page_html, page_url)
+    # Merge hints (do not overwrite discovered URLs)
+    hints = get_doc_url_hints()
+    for k, v in hints.items():
+        doc_map.setdefault(k, v)
 
     downloaded: Dict[str, str] = {}
     count = 0
