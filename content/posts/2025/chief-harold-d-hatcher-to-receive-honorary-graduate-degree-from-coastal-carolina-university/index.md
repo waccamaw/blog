@@ -19,7 +19,7 @@ Doug Hatcher
 
 The Waccamaw Indian People are proud to announce that our esteemed leader, Chief Harold "Buster" D. Hatcher, will be awarded an honorary graduate degree by Coastal Carolina University during their commencement ceremony this Friday. This honor serves to recognize Chief Hatcher's unwavering advocacy for the rights, recognition, and cultural preservation of the Waccamaw Indian People, as well as his numerous contributions to the broader South Carolina community.
 
-![ree](./images/e51f96_8989f343356345a6abfc442fb19e5e31~mv2-2.jpg)
+![ree](https://static.wixstatic.com/media/e51f96_8989f343356345a6abfc442fb19e5e31~mv2.jpg/v1/fill/w_78,h_51,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/e51f96_8989f343356345a6abfc442fb19e5e31~mv2.jpg)
 
 Chief Hatcher has dedicated his life to advancing the understanding and appreciation of Native American heritage, while also working to improve the lives of the Waccamaw Indian People. His leadership has been instrumental in securing state recognition for our tribe, which has opened up opportunities for cultural and social development, as well as access to various resources and benefits.
 

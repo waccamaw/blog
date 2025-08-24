@@ -57,7 +57,7 @@ We have acquired about 1000 lbs of canned and dried foods for distribution to ou
 
                 We also have some military blankets, backpacks, and boots to distribute
 
-![ree](./images/98a108_4ad88d02d5fd4f448e89104c7482be82~mv2-1.jpg)
+![ree](https://static.wixstatic.com/media/98a108_4ad88d02d5fd4f448e89104c7482be82~mv2.jpg/v1/fill/w_144,h_160,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/98a108_4ad88d02d5fd4f448e89104c7482be82~mv2.jpg)
 
 Tags:
 

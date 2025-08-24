@@ -21,7 +21,7 @@ Michelle Hatcher
 
 [https://www.groupraise.com/offer-campaigns/10957-waccamaw-indian-people-krispy-kreme-digital-dozens](https://www.groupraise.com/offer-campaigns/10957-waccamaw-indian-people-krispy-kreme-digital-dozens)
 
-![ree](./images/98a108_70f804cbbd5846568e5d52309f9a075d~mv2-1.jpg)
+![ree](https://static.wixstatic.com/media/98a108_70f804cbbd5846568e5d52309f9a075d~mv2.jpg/v1/fill/w_162,h_216,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/98a108_70f804cbbd5846568e5d52309f9a075d~mv2.jpg)
 
 Tags:
 

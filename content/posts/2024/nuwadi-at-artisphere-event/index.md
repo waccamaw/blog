@@ -31,7 +31,7 @@ Artisphere 2024 is taking place May 10 – 12. The daily hours are as follows:
 
 Have a good day!
 
-![ree](./images/98a108_a62f7b702239472ca9c90c7f245f8d40~mv2-1.jpg)
+![ree](https://static.wixstatic.com/media/98a108_a62f7b702239472ca9c90c7f245f8d40~mv2.jpg/v1/fill/w_56,h_56,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/98a108_a62f7b702239472ca9c90c7f245f8d40~mv2.jpg)
 
 **Cassandra Hicks-Brown, MHSA, SHRM-CP**
 

@@ -21,7 +21,7 @@ Updated: May 10, 2022
 
 If you are a member and interested in assisting with the project, please contact 2C John Turner at: [[email protected]](/cdn-cgi/l/email-protection)
 
-![ree](./images/98a108_ae0ec5515a17451bbc60a513f03b62a7~mv2-1.jpg)
+![ree](https://static.wixstatic.com/media/98a108_ae0ec5515a17451bbc60a513f03b62a7~mv2.jpg/v1/fill/w_147,h_202,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/98a108_ae0ec5515a17451bbc60a513f03b62a7~mv2.jpg)
 
 Tags:
 

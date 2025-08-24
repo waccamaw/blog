@@ -29,5 +29,5 @@ Chief of The Waccamaw Indian Tribal Council
 
 Ricky Hudnall
 
-![image](./images/98a108_9e68f94ebf4a4e438b3320869d2a0ad3~mv2-1.jpg)
+![image](https://static.wixstatic.com/media/98a108_9e68f94ebf4a4e438b3320869d2a0ad3~mv2.jpg/v1/fill/w_98,h_129,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/98a108_9e68f94ebf4a4e438b3320869d2a0ad3~mv2.jpg)
 

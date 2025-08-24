@@ -21,7 +21,7 @@ Today marks another milestone for the Waccamaw Indian People. We finally have ou
 
 Thanks, Glenn C
 
-![ree](./images/98a108_427e1348081d4d50a4197f2a9ba17617~mv2-1.jpg)
+![ree](https://static.wixstatic.com/media/98a108_427e1348081d4d50a4197f2a9ba17617~mv2.jpg/v1/fill/w_147,h_302,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/98a108_427e1348081d4d50a4197f2a9ba17617~mv2.jpg)
 
 Tags:
 

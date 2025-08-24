@@ -25,7 +25,7 @@ Updated: Jun 20
 
 Please join us on June 21, 2025, for the summer equinox on the tribal grounds at 591 Bluewater Rd, Aynor, SC 29511. This event is open to the public. Photographs of the sacred fire are not allowed. The ceremony will be held at 6:06 a.m., noon, and approximately 6:00 p.m. Lunch will be served after the noon ceremony. Reminder: The high temperature in the morning is expected to be around 75 degrees, with temperatures reaching 90 degrees in the afternoon. Please dress comfortably for the later forecast.
 
-![ree](./images/98a108_bb4d0137d2ce418399da2f20957a2f19~mv2-3.png)
+![ree](https://static.wixstatic.com/media/98a108_bb4d0137d2ce418399da2f20957a2f19~mv2.png/v1/fill/w_49,h_63,al_c,q_85,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/98a108_bb4d0137d2ce418399da2f20957a2f19~mv2.png)
 
 Tags:
 

@@ -21,7 +21,7 @@ This is your blog post. Blogs are a great way to connect with your audience and 
 
 To really engage your site visitors we suggest you blog about subjects that are related to your site or business. Blogging is also really good for SEO, so we recommend including keywords that relate to your services, products or industry within your posts. It’ll make it easier for people to find you on the web.
 
-![image](./images/cc8977110b194405a07d99a935f3e160-1.jpg)
+![image](https://static.wixstatic.com/media/cc8977110b194405a07d99a935f3e160.jpg/v1/fill/w_147,h_84,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/cc8977110b194405a07d99a935f3e160.jpg)
 
 [#volunteer](https://www.waccamaw.org/updates/hashtags/volunteer) [#charity](https://www.waccamaw.org/updates/hashtags/charity)
 

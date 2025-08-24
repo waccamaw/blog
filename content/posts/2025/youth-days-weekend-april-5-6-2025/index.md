@@ -29,7 +29,7 @@ The Waccamaw Indian People are organizing a Youth Days Weekend, offering childre
 
 Through the Justice Outside organization and within their Liberated Paths under the Youth Access to Nature Fund, we would like to thank them for helping make this possible.
 
-![ree](./images/98a108_be408c5d3229442abde265a2024b00c6~mv2-2.png)
+![ree](https://static.wixstatic.com/media/98a108_be408c5d3229442abde265a2024b00c6~mv2.png/v1/fill/w_49,h_63,al_c,q_85,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/98a108_be408c5d3229442abde265a2024b00c6~mv2.png)
 
 Tags:
 
