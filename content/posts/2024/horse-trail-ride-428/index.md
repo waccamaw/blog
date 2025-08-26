@@ -9,19 +9,5 @@ source: "wix"
 source_guid: ""
 ---
 
-# Horse Trail Ride 4/28 Sucessful
 
--
-
-Doug Hatcher
-- Apr 30, 2018
-- 1 min read
-
-![Contact Larry for more information.](./images/98a108_47f47c711e644968a4d815a015d39132~mv2-1.jpg)
-
-Thanks to great weather, the Waccamaw Trail Ride turned out well Saturday. I would like to thank Clay for his efforts before, during, and after the ride. I want to thank Mr. Doug, Mrs. Jewell, and, of course, Cheyenne, for security. Our friend, Ronnie Boardwine was also a gerat asset. Thanks to anyone else who helped to make the ride a success. I will have full details at the Friday night meeting.
-
-Larry Jernigan
-
-[#event](https://www.waccamaw.org/updates/hashtags/event) [#fundraiser](https://www.waccamaw.org/updates/hashtags/fundraiser)
 

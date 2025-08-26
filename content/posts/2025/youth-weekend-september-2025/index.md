@@ -16,10 +16,10 @@ image: "./featured.png"
 -
 
 Michelle Hatcher
-- 6 days ago
+- Aug 17
 - 1 min read
 
-Updated: 15 minutes ago
+Updated: 2 days ago
 
 An educational and fun experience for youth ages 9-17 (roughly grades 6-11).
 
