@@ -311,7 +311,7 @@ We are looking for someone to do it; can be done remotely, preferably with Adobe
 
         1.
 
-Email Michelle at [[email protected]](/cdn-cgi/l/email-protection#c9bea0b9e7b9aca6b9a5acbae7a8a5a5a0a8a7aaac89aea4a8a0a5e7aaa6a4) if interested
+Email Michelle at [[email protected]](/cdn-cgi/l/email-protection#d8afb1a8f6a8bdb7a8b4bdabf6b9b4b4b1b9b6bbbd98bfb5b9b1b4f6bbb7b5) if interested
 
         2.
 
