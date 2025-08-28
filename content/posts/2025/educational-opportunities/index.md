@@ -33,7 +33,7 @@ Contact     John D. Turner
                   2nd Chief Internal
                   Waccamaw Indian People
                   843-655-5774
- [[email protected]](/cdn-cgi/l/email-protection#deb4aaabacb0bbace8e89ebfaab3bdf0b0bbaa)
+ [[email protected]](/cdn-cgi/l/email-protection#73190706011d160145453312071e105d1d1607)
 
 Tags:
 
