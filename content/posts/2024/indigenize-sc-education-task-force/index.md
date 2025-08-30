@@ -35,7 +35,7 @@ funding opportunities for some of our initiatives
 
 other announcements, updates, discussion points, etc.
 
-The task force thanks everyone who works to indigenize education in South Carolina! If you'd like to join the task force, email Sara Rich at [[email protected]](/cdn-cgi/l/email-protection#7506071c161d4735161a14060114195b101100).
+The task force thanks everyone who works to indigenize education in South Carolina! If you'd like to join the task force, email Sara Rich at [[email protected]](/cdn-cgi/l/email-protection#6a1918030902582a09050b191e0b06440f0e1f).
 
 We'll hopefully have more updates for the next WIP newsletter!
 

@@ -1,7 +1,7 @@
 ---
 title: "Youth Weekend: September 2025"
 date: "2025-08-17T15:12:00Z"
-lastmod: "2025-08-23T00:00:00Z"
+lastmod: "2025-08-30T00:00:00Z"
 url: "https://www.waccamaw.org/single-post/youth-weekend-september-2025"
 categories:
   - "Youth Weekend"
@@ -19,7 +19,7 @@ Michelle Hatcher
 - Aug 17
 - 1 min read
 
-Updated: 2 days ago
+Updated: 2 hours ago
 
 An educational and fun experience for youth ages 9-17 (roughly grades 6-11).
 
@@ -31,7 +31,7 @@ Day 2: NOTE: kayaking is age 11-17) From the Waccamaw Tribal grounds to Huggins 
 
 Registration link: [https://www.zeffy.com/en-US/ticketing/youth-days-weekend-september--2025](https://www.zeffy.com/en-US/ticketing/youth-days-weekend-september--2025)
 
-![ree](./images/98a108_206f9b54d9204be998f989f080769e41~mv2-1.jpg)
+![ree](./images/98a108_86e461705ddf4ba98105f708c7595c7c~mv2.png)
 
 Tags:
 
