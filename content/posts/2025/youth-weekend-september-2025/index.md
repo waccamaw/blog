@@ -31,7 +31,7 @@ Day 2: NOTE: kayaking is age 11-17) From the Waccamaw Tribal grounds to Huggins 
 
 Registration link: [https://www.zeffy.com/en-US/ticketing/youth-days-weekend-september--2025](https://www.zeffy.com/en-US/ticketing/youth-days-weekend-september--2025)
 
-![ree](./images/98a108_86e461705ddf4ba98105f708c7595c7c~mv2.png)
+![ree](./images/98a108_86e461705ddf4ba98105f708c7595c7c~mv2-1.png)
 
 Tags:
 
