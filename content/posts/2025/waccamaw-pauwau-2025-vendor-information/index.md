@@ -20,7 +20,7 @@ Michelle Hatcher
 - Jul 10
 - 1 min read
 
-Good news, vendors! Online payments are now available. You can also choose to feature your business with an ad in this year's program book. If you have any questions, email Jennifer at [[email protected]](/cdn-cgi/l/email-protection#c2b5abb2ecb2a7adb2aea7b1eca3aeaeaba3aca1a782a5afa3abaeeca1adaf) or Susan at [[email protected]](/cdn-cgi/l/email-protection#18797e6a7d6c6b6d6b7976587f75797174367b7775).
+Good news, vendors! Online payments are now available. You can also choose to feature your business with an ad in this year's program book. If you have any questions, email Jennifer at [[email protected]](/cdn-cgi/l/email-protection#35425c451b45505a455950461b5459595c545b5650755258545c591b565a58) or Susan at [[email protected]](/cdn-cgi/l/email-protection#533235213627202620323d13343e323a3f7d303c3e).
 
 [https://www.zeffy.com/en-US/ticketing/wip-school-day-and-pauwau-vendor-payment-and-business-card-sized-ad](https://www.zeffy.com/en-US/ticketing/wip-school-day-and-pauwau-vendor-payment-and-business-card-sized-ad)
 

@@ -25,7 +25,7 @@ Caroline Hatchett
 
 writer and editor
 
-[[email protected]](/cdn-cgi/l/email-protection#1e7d7f6c717277707b30767f6a7d767b6a6a5e79737f7772307d7173) | 706.296.6291 | [@hatchetteats](https://www.instagram.com/hatchetteats/) | [carolinehatchett.com](http://carolinehatchett.com)
+[[email protected]](/cdn-cgi/l/email-protection#583b392a373431363d7630392c3b303d2c2c183f35393134763b3735) | 706.296.6291 | [@hatchetteats](https://www.instagram.com/hatchetteats/) | [carolinehatchett.com](http://carolinehatchett.com)
 
 Facebook: [https://www.facebook.com/bittersoutherner](https://www.facebook.com/bittersoutherner)
 

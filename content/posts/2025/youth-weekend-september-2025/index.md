@@ -1,9 +1,10 @@
 ---
 title: "Youth Weekend: September 2025"
 date: "2025-08-17T15:12:00Z"
-lastmod: "2025-08-30T00:00:00Z"
+lastmod: "2025-08-31T00:00:00Z"
 url: "https://www.waccamaw.org/single-post/youth-weekend-september-2025"
 categories:
+  - "Events"
   - "Youth Weekend"
 author: "Michelle Hatcher"
 source: "wix"
@@ -19,7 +20,7 @@ Michelle Hatcher
 - Aug 17
 - 1 min read
 
-Updated: 2 hours ago
+Updated: 13 hours ago
 
 An educational and fun experience for youth ages 9-17 (roughly grades 6-11).
 
