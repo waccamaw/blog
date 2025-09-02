@@ -51,7 +51,7 @@ Second-place awardees will receive a $500 cash award.
 
 Submissions may be received here: [https://america250.org/fieldtrip/](https://america250.org/fieldtrip/)
 
-If you have questions about America’s Field Trip or the materials, please reach out to [[email protected]](/cdn-cgi/l/email-protection#cdaea2a0a0b8a3a4aeacb9a4a2a3be8daca0a8bfa4aeacfff8fde3a2bfaa).
+If you have questions about America’s Field Trip or the materials, please reach out to [[email protected]](/cdn-cgi/l/email-protection#abc8c4c6c6dec5c2c8cadfc2c4c5d8ebcac6ced9c2c8ca999e9b85c4d9cc).
 
 ![ree](./images/98a108_15924ff006f8422b8df0723b4783015f~mv2-1.jpg)
 

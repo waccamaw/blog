@@ -16,7 +16,7 @@ image: "./featured.png"
 -
 
 Michelle Hatcher
-- 3 hours ago
+- 2d
 - 8 min read
 
 Tribal Open Meeting Summary 8/1/2025  held at the tribal office
@@ -559,7 +559,7 @@ Google Workspace: Michelle
 
         1.
 
-You can get a [@](/cdn-cgi/l/email-protection#6d2c2f2e2d1a0c0e0e0c000c1a43021f0a)[waccamaw.org](http://waccamaw.org) email address
+You can get a [@](/cdn-cgi/l/email-protection#8acbc8c9cafdebe9e9ebe7ebfda4e5f8ed)[waccamaw.org](http://waccamaw.org) email address
 
         2.
 

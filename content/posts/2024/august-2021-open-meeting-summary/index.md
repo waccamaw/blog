@@ -245,7 +245,7 @@ Files: Starla
 
       1.
 
-Starla: if you send anything, send it to [[email protected]](/cdn-cgi/l/email-protection#394a4d584b55585d5c5c0f08795e54585055175a5654)
+Starla: if you send anything, send it to [[email protected]](/cdn-cgi/l/email-protection#d7a4a3b6a5bbb6b3b2b2e1e697b0bab6bebbf9b4b8ba)
 
       2.
 

@@ -19,19 +19,19 @@ Michelle Hatcher
 
 We thank the City of Conway and Mayor Barbara Blain, the City of Georgetown and Mayor Carol Jayroe, the City of Myrtle Beach and Mayor Brenda Bethune, the County of Georgetown and Councilman Louis Mourant, and SC Governor Henry McMaster for recognizing tribes in SC. We encourage the state legislature and SC residents to visit our tribal grounds.
 
-![ree](./images/98a108_7e7ba767405544e49cfcb1a424a1d3c5~mv2.jpg)
+![ree](./images/98a108_7e7ba767405544e49cfcb1a424a1d3c5~mv2-1.jpg)
 
-![ree](./images/98a108_5177c94aec0840bba327bdf92b93422f~mv2.jpg)
+![ree](./images/98a108_5177c94aec0840bba327bdf92b93422f~mv2-1.jpg)
 
-![ree](./images/98a108_4c36f9eab2a64c048e008ed522c68bdb~mv2.jpg)
+![ree](./images/98a108_4c36f9eab2a64c048e008ed522c68bdb~mv2-1.jpg)
 
-![ree](./images/98a108_852434fe995f416c91f0793b3cb3ffff~mv2.jpg)
+![ree](./images/98a108_852434fe995f416c91f0793b3cb3ffff~mv2-1.jpg)
 
-![ree](./images/98a108_5222a6a7d1cd47aebe0cea97654cf91a~mv2.jpg)
+![ree](./images/98a108_5222a6a7d1cd47aebe0cea97654cf91a~mv2-1.jpg)
 
-![ree](./images/98a108_089ab702a1cc41d29e053c1f9220d817~mv2.jpg)
+![ree](./images/98a108_089ab702a1cc41d29e053c1f9220d817~mv2-1.jpg)
 
-![ree](./images/98a108_db34592c2cc64f119f8f240f4912e941~mv2.jpg)
+![ree](./images/98a108_db34592c2cc64f119f8f240f4912e941~mv2-1.jpg)
 
 Tags:
 

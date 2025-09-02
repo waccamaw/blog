@@ -625,5 +625,5 @@ Meeting adjourned 8:35 pm.
 
 Respectfully submitted by Michelle Hatcher on 05/27/16 at 2:17 am.
 
-[#minutes](https://www.waccamaw.org/updates/search/.hash.minutes) [#meeting](https://www.waccamaw.org/updates/search/.hash.meeting)
+[#minutes](https://www.waccamaw.org/updates/hashtags/minutes) [#meeting](https://www.waccamaw.org/updates/hashtags/meeting)
 

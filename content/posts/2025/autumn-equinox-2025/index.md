@@ -20,13 +20,13 @@ Michelle Hatcher
 - Aug 17
 - 1 min read
 
-Updated: 13 hours ago
+Updated: 1 day ago
 
 The autumn equinox is almost here! We invite you to join our celebration on September 20th with events scheduled for 7:04 a.m., Noon, 4:00 p.m., and 6:30 p.m. Let's welcome the new season together.
 
 ![ree](./images/98a108_53bd5a03f135497098a37f7dfd79eb9c~mv2-1.png)
 
-![ree](./images/98a108_1af2321e8c764527a135dd9357ab9f5a~mv2.png)
+![ree](./images/98a108_1af2321e8c764527a135dd9357ab9f5a~mv2-1.png)
 
 Tags:
 
