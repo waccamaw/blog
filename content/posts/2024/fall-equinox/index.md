@@ -9,19 +9,5 @@ source: "wix"
 source_guid: ""
 ---
 
-# Fall Equinox
 
--
-
-Doug Hatcher
-- Sep 14, 2017
-- 1 min read
-
-The Fall Equinox celebration has been scheduled for Saturday October 7th at the Waccamaw Tribal Grounds. A sunrise ceremony, a noon ceremony and a closing ceremony will be observed. Please make plans to attend.
-
-If there are any questions or concerns please contact the
-
-Waccamaw Fire Keeper Robert Benton or CoC Ricky Hudnall.  Hope to see you all there.
-
-[#ceremony](https://www.waccamaw.org/updates/hashtags/ceremony) [#equinox](https://www.waccamaw.org/updates/hashtags/equinox)
 
